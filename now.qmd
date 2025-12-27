@@ -13,15 +13,6 @@ This is a [now page](https://nownownow.com/about), inspired by Derek Sivers, des
 
 ### Research
 
-- Working on my dissertation focusing on [topic]
-- Collaborating on a project about [topic] with [collaborators]
-- Revising paper on [topic] for submission to [journal]
-
-### Teaching
-
-- Teaching Assistant for [Course Name]
-- Developing new course materials on [topic]
-
 ### Learning
 
 - Deepening my knowledge of [topic/method]
@@ -30,26 +21,14 @@ This is a [now page](https://nownownow.com/about), inspired by Derek Sivers, des
 
 ## Recent Accomplishments
 
-- Presented at [Conference] (see [Talks](talks.qmd))
-- Published new working paper (see [Research](research.qmd))
-- [Other achievement]
+- Published new working paper (see [Research](research/index.qmd))
 
 ## Upcoming
-
-- Conference presentation at [Event] in [Month]
-- Job market (if applicable)
-- [Other upcoming event]
 
 ## Side Projects
 
 - Building [project description]
-- Contributing to [open source project]
-- [Other project]
 
 ---
 
 *Want to know what I was doing before? Check out the [blog](blog.qmd) for updates and reflections.*
-
-::: {.now-note}
-*This page follows the [now page movement](https://nownownow.com/) — a simple way to share what you're currently focused on. If this inspired you, consider making your own!*
-:::

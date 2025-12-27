@@ -55,3 +55,5 @@ __pycache__/
 # Environment files (keep .env.example if you create one)
 .env
 .env.local
+
+**/*.quarto_ipynb

@@ -2,22 +2,21 @@
 title: "Welcome to My Blog"
 description: "First post introducing the blog and what to expect"
 author: "Lorenzo Fabbri"
-date: "2025-01-01"
+date: "2025-12-27"
 categories: [news, welcome]
 image: ""
 draft: false
 ---
 
-Welcome to my academic blog! This space will feature posts about my research, thoughts on economics, data analysis tutorials, and reflections on academic life.
+Welcome to my academic blog! This space will feature posts about my research, thoughts on epidemiology and causal inference, and reflections on academic life.
 
 ## What to Expect
 
 I plan to write about:
 
 - **Research updates**: New papers, works in progress, and research ideas
-- **Methods and tools**: R programming, econometrics, data visualization
+- **Methods and tools**: R programming, causal inference, evidence triangulation
 - **Academic life**: Conference experiences, teaching, and professional development
-- **Economics and policy**: Thoughts on current economic issues and policy debates
 
 ## Stay Connected
 
@@ -26,5 +25,6 @@ You can follow along by:
 - Subscribing to the [RSS feed](index.xml)
 - Following me on [GitHub](https://github.com/lorenzoFabbri)
 - Connecting on [LinkedIn](https://www.linkedin.com/in/lorenzo-fabbri-303185383/)
+- Connecting on [Bluesky](https://bsky.app/profile/epilorenzo.bsky.social)
 
 Thank you for visiting, and I hope you find the content interesting and useful!

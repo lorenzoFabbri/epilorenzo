@@ -1,50 +1,10 @@
 # Lorenzo Fabbri - Academic Website
 
-My personal academic website built with Quarto, R, and renv. This site showcases my research, publications, teaching, and blog posts.
+My personal academic website built with Quarto and R. This site showcases my research, publications, teaching, and blog posts.
 
 🌐 **Live site:** [https://lorenzofabbri.github.io/epilorenzo](https://lorenzofabbri.github.io/epilorenzo)
 
-## Features
-
-- **Academic pages:** About, CV, Research, Talks, Blog, and Now page
-- **Automatic publication sync:** Publications are automatically fetched from Google Scholar
-- **Blog with RSS:** Write posts in Quarto markdown with full RSS feed support
-- **Reproducible:** Uses R's `renv` for package management
-- **GitHub Actions:** Automated deployment and publication updates
-
-## Structure
-
-```
-.
-├── _quarto.yml              # Quarto configuration
-├── custom.css               # Custom academic styling
-├── index.qmd                # About page
-├── cv.qmd                   # CV with PDF preview
-├── research.qmd             # Publications and working papers
-├── blog.qmd                 # Blog listing page
-├── talks.qmd                # Presentations and talks
-├── now.qmd                  # Current activities
-├── references.bib           # Publications bibliography
-├── apa.csl                  # APA citation style
-├── renv.lock                # R package dependencies
-├── scripts/
-│   └── update_publications.R  # Google Scholar sync script
-├── posts/                   # Blog posts
-│   └── welcome/
-│       └── index.qmd
-└── .github/workflows/
-    ├── deploy-website.yml   # Build and deploy to GitHub Pages
-    └── update-publications.yml  # Weekly publication updates
-```
-
 ## Building Locally
-
-### Prerequisites
-
-- [Quarto](https://quarto.org/docs/get-started/) (version 1.4+)
-- [R](https://www.r-project.org/) (version 4.3+)
-
-### Setup
 
 1. Clone the repository:
    ```bash
@@ -71,17 +31,57 @@ The website will be built in the `docs/` directory.
 
 ## Publication Management
 
-Publications are automatically synced from Google Scholar weekly via GitHub Actions. To manually update:
+Publications are managed manually by adding `.qmd` files in the appropriate directories under `research/`:
 
-```bash
-Rscript scripts/update_publications.R
-```
+- `research/articles/` - Published journal articles and conference papers
+- `research/working-papers/` - Preprints and works in progress
+- `research/posters/` - Conference posters and presentations
 
-This will:
-1. Fetch publications from Google Scholar
-2. Convert to BibTeX format
-3. Update `references.bib`
-4. Publications automatically appear on the Research page
+### Adding a New Publication
+
+1. Create a new folder under the appropriate category:
+   ```bash
+   mkdir -p research/articles/my-paper-name
+   ```
+
+2. Create an `index.qmd` file in the folder with the publication details:
+   ```yaml
+   ---
+   title: "Your Paper Title"
+   date: 2024-01-15
+   author:
+     - name: Your Name
+       orcid: 0000-0003-3031-322X
+       affiliation: Your University
+   categories:
+     - Category 1
+     - Category 2
+   pub-info:
+     reference: >-
+       <strong>Your Name</strong>, "Paper Title," <em>Journal Name</em>
+     links:
+       - name: PDF
+         url: paper.pdf
+         icon: fa-solid fa-file-pdf
+         local: true
+       - name: DOI
+         url: https://doi.org/10.xxxx/xxxxx
+         icon: fa-solid fa-scroll
+   ---
+   
+   ## Abstract
+   
+   Your abstract here...
+   ```
+
+3. Add any supporting files (PDFs, images) to the same folder
+
+4. Render the website:
+   ```bash
+   quarto render
+   ```
+
+The publication will automatically appear on the Research page in the appropriate section.
 
 ## Writing Blog Posts
 
@@ -110,18 +110,11 @@ This will:
 
 ## Deployment
 
-The website automatically deploys to GitHub Pages on push to `main`. Make sure:
+The website automatically deploys to GitHub Pages when you push to `main`. Make sure:
 
 1. GitHub Pages is enabled in repository settings
 2. Source is set to "GitHub Actions"
-3. The `deploy-website.yml` workflow has proper permissions
-
-## Customization
-
-- **Theme:** Edit `_quarto.yml` to change from Flatly to another Bootswatch theme
-- **Styling:** Modify `custom.css` for custom styling
-- **Colors:** Update CSS color variables in `custom.css`
-- **Social links:** Update in `_quarto.yml` navbar/footer sections
+3. The workflow has proper permissions
 
 ## License
 

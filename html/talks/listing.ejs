@@ -1,33 +1,42 @@
 ```{=html}
 <div class="talks">
-<ul class="list">
+  <ul class="list">
     <% for (const item of items) { %>
-        <li class="talk" <%=metadataAttrs(item) %>>
-            <div class="talk-header">
-                <p class="talk-title"><strong><%= item.title %></strong></p>
-                <p class="talk-date"><%= item.date %></p>
-            </div>
-            
-            <div class="talk-details">
-                <p class="talk-description"><%= item.description %></p>
-                <p class="talk-location"><i class="fa-solid fa-location-dot"></i> <%= item.location %></p>
-            </div>
+      <li class="talk" <%=metadataAttrs(item) %>>
+        <div class="talk-header">
+          <p class="talk-title"><strong>
+              <%= item.title %>
+            </strong></p>
+          <p class="talk-date">
+            <%= item.date %>
+          </p>
+        </div>
 
-            <% if (item.links) { %>
-            <div class="talk-links">
-                <ul class="project-links">
-                    <% for (const link of item.links) { %>
-                    <li class="project-link">
-                        <a href="<%- link.url %>">
-                            <i class="<%- link.icon %>"></i> <%= link.name %>
-                        </a>
-                    </li>
-                    <% } %>
-                </ul>
-            </div>
-            <% } %>
-        </li>
-    <% } %>
-</ul>
+        <div class="talk-details">
+          <p class="talk-description">
+            <%= item.description %>
+          </p>
+          <p class="talk-location"><i class="fa-solid fa-location-dot"></i>
+            <%= item.location %>
+          </p>
+        </div>
+
+        <% if (item.links) { %>
+          <div class="talk-links">
+            <ul class="project-links">
+              <% for (const link of item.links) { %>
+                <li class="project-link">
+                  <a href="<%- link.url %>">
+                    <i class="<%- link.icon %>"></i>
+                    <%= link.name %>
+                  </a>
+                </li>
+                <% } %>
+            </ul>
+          </div>
+          <% } %>
+      </li>
+      <% } %>
+  </ul>
 </div>
 ```

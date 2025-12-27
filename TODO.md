@@ -1,0 +1,1 @@
+- [ ] Use API Hardcover to pull reading list.

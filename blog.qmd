@@ -13,7 +13,7 @@ listing:
   date-format: "MMMM D, YYYY"
 ---
 
-Welcome to my blog! Here I write about research, economics, data science, and other topics of interest.
+Welcome to my blog! Here I write about epidemiology, causal inference, and other topics of interest.
 
 ## Recent Posts
 

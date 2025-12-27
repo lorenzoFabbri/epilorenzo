@@ -1,6 +1,8 @@
 /* =============================================================================
-   Custom CSS for Academic Website (academicpages-inspired)
-   ============================================================================= */
+  Custom CSS for Academic Website (academicpages-inspired)
+  ============================================================================= */
+
+/*-- scss:rules --*/
 
 /* Typography - Serif fonts for academic feel */
 body {
@@ -10,7 +12,12 @@ body {
   color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   margin-top: 1.5em;
@@ -248,38 +255,42 @@ code {
   body {
     font-size: 14px;
   }
-  
+
   h1 {
     font-size: 1.8em;
   }
-  
+
   h2 {
     font-size: 1.5em;
   }
-  
+
   .page-layout-full {
     padding: 1em 0.5em;
   }
-  
+
   table {
     font-size: 0.9em;
   }
-  
-  table th, table td {
+
+  table th,
+  table td {
     padding: 0.5em;
   }
 }
 
 /* Print styles */
 @media print {
-  .navbar, footer, .sidebar {
+
+  .navbar,
+  footer,
+  .sidebar {
     display: none;
   }
-  
+
   body {
     font-size: 12pt;
   }
-  
+
   a {
     color: #000;
     text-decoration: none;
