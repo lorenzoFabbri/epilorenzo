@@ -1,0 +1,49 @@
+---
+title: "Example Working Paper Title"
+date: 2024-06-01
+author:
+  - name: Lorenzo Fabbri
+    url: https://github.com/lorenzoFabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: Your University
+  - name: Coauthor Name
+    affiliation: Another University
+categories:
+  - Development Economics
+  - Policy Evaluation
+pub-info:
+  reference: >-
+    <strong>Lorenzo Fabbri</strong> and Coauthor Name, "Example Working Paper Title," Working Paper (2024)
+  links:
+    - name: Working paper
+      url: working-paper.pdf
+      icon: fa-solid fa-file-pdf
+      local: true
+    - name: Code
+      url: https://github.com/lorenzoFabbri
+      icon: fa-brands fa-github
+    - name: SSRN
+      url: https://ssrn.com/abstract=example
+      icon: fa-solid fa-file-invoice
+---
+
+## Abstract
+
+This is an example working paper entry. Replace this with your actual working paper abstract. Working papers are research papers that are complete but not yet published in a peer-reviewed journal.
+
+## Important links
+
+- [Working paper (PDF)](working-paper.pdf)
+- [Code repository](https://github.com/lorenzoFabbri)
+- [SSRN](https://ssrn.com/abstract=example)
+
+## BibTeX citation
+
+```bibtex
+@misc{fabbri2024working,
+  author = {Fabbri, Lorenzo and Name, Coauthor},
+  title = {Example Working Paper Title},
+  year = {2024},
+  note = {Working Paper}
+}
+```

@@ -3,92 +3,101 @@
 # =============================================================================
 # Update Publications from Google Scholar
 # =============================================================================
-# This script fetches publications from Google Scholar and converts them
-# to a clean BibTeX file for use in the Quarto website.
+# This script fetches publications from Google Scholar and categorizes them
+# into journal articles, working papers, and conference posters.
 #
-# Requirements: scholar, dplyr, stringr, bibtex packages
+# Requirements: scholar package
 # Usage: Rscript scripts/update_publications.R
 # =============================================================================
 
-library(scholar)
-library(dplyr)
-library(stringr)
-library(bibtex)
-
-# Configuration
-SCHOLAR_ID <- "QbPv1H0AAAAJ"  # Lorenzo Fabbri's Google Scholar ID
-OUTPUT_FILE <- "references.bib"
-
-cat("Starting publication update...\n")
-cat("Scholar ID:", SCHOLAR_ID, "\n")
-
-# Fetch publications from Google Scholar
-cat("\nFetching publications from Google Scholar...\n")
-tryCatch({
-  pubs <- get_publications(SCHOLAR_ID)
+#' Fetch publications from Google Scholar
+#'
+#' @param scholar_id Character string with Google Scholar ID
+#' @return Data frame with publication data
+#' @export
+fetch_publications <- function(scholar_id) {
+  cat("Fetching publications from Google Scholar...\n")
+  cat("Scholar ID:", scholar_id, "\n")
+  
+  pubs <- scholar::get_publications(scholar_id)
   cat("Retrieved", nrow(pubs), "publications\n")
-}, error = function(e) {
-  cat("Error fetching publications:", e$message, "\n")
-  cat("Using cached/example data instead.\n")
-  quit(status = 1)
-})
+  
+  return(pubs)
+}
 
-# Display basic info
-cat("\nPublications summary:\n")
-print(head(pubs[, c("title", "year", "journal")], 10))
+#' Clean and normalize publication data
+#'
+#' @param pubs Data frame with raw publication data
+#' @return Data frame with cleaned publication data
+#' @export
+clean_publications <- function(pubs) {
+  cat("\nCleaning publication data...\n")
+  
+  pubs_clean <- pubs |>
+    # Remove duplicates based on title
+    dplyr::distinct(title, .keep_all = TRUE) |>
+    # Clean up titles (remove extra whitespace, newlines)
+    dplyr::mutate(
+      title = stringr::str_squish(stringr::str_replace_all(title, "[\n\r]+", " ")),
+      journal = stringr::str_squish(journal),
+      author = stringr::str_squish(author)
+    ) |>
+    # Categorize publications
+    dplyr::mutate(
+      pub_type = dplyr::case_when(
+        # Posters: look for "poster" in title or journal field
+        stringr::str_detect(stringr::str_to_lower(title), "poster") |
+          stringr::str_detect(stringr::str_to_lower(journal), "poster") ~ "poster",
+        # Journal articles: have a journal name
+        !is.na(journal) & journal != "" ~ "article",
+        # Everything else is a working paper
+        TRUE ~ "working-paper"
+      )
+    ) |>
+    # Create stable citation keys
+    dplyr::mutate(
+      first_author = stringr::str_extract(author, "^[A-Za-z]+"),
+      first_word = stringr::str_extract(title, "^[A-Za-z]+"),
+      citekey = paste0(
+        tolower(first_author), 
+        year, 
+        tolower(first_word)
+      )
+    ) |>
+    # Ensure unique citation keys
+    dplyr::group_by(citekey) |>
+    dplyr::mutate(
+      citekey = dplyr::if_else(
+        dplyr::n() > 1,
+        paste0(citekey, "_", dplyr::row_number()),
+        citekey
+      )
+    ) |>
+    dplyr::ungroup() |>
+    # Sort by year (descending) and citations
+    dplyr::arrange(dplyr::desc(year), dplyr::desc(cites))
+  
+  cat("Cleaned", nrow(pubs_clean), "unique publications\n")
+  cat("  - Articles:", sum(pubs_clean$pub_type == "article"), "\n")
+  cat("  - Working papers:", sum(pubs_clean$pub_type == "working-paper"), "\n")
+  cat("  - Posters:", sum(pubs_clean$pub_type == "poster"), "\n")
+  
+  return(pubs_clean)
+}
 
-# Data cleaning and normalization
-cat("\nCleaning publication data...\n")
-
-# Clean and normalize data
-pubs_clean <- pubs %>%
-  # Remove duplicates based on title
-  distinct(title, .keep_all = TRUE) %>%
-  # Sort by year (descending) and citations
-  arrange(desc(year), desc(cites)) %>%
-  # Clean up titles (remove extra whitespace, newlines)
-  mutate(
-    title = str_squish(str_replace_all(title, "[\n\r]+", " ")),
-    journal = str_squish(journal),
-    author = str_squish(author)
-  ) %>%
-  # Create stable citation keys
-  mutate(
-    # Create citation key: firstauthor_year_firstword
-    first_author = str_extract(author, "^[A-Za-z]+"),
-    first_word = str_extract(title, "^[A-Za-z]+"),
-    citekey = paste0(
-      tolower(first_author), 
-      year, 
-      tolower(first_word)
-    )
-  ) %>%
-  # Ensure unique citation keys
-  group_by(citekey) %>%
-  mutate(
-    citekey = if_else(
-      n() > 1,
-      paste0(citekey, "_", row_number()),
-      citekey
-    )
-  ) %>%
-  ungroup()
-
-cat("Cleaned", nrow(pubs_clean), "unique publications\n")
-
-# Convert to BibTeX format
-cat("\nConverting to BibTeX format...\n")
-
-# Function to create a BibTeX entry
+#' Create a BibTeX entry for a publication
+#'
+#' @param row Single row data frame with publication data
+#' @return Character string with BibTeX entry
+#' @export
 create_bibtex_entry <- function(row) {
-  # Determine entry type
-  entry_type <- if (!is.na(row$journal) && row$journal != "") {
-    "article"
-  } else if (!is.na(row$booktitle) && row$booktitle != "") {
-    "inproceedings"
-  } else {
-    "misc"
-  }
+  # Determine entry type based on pub_type
+  entry_type <- dplyr::case_when(
+    row$pub_type == "article" ~ "article",
+    row$pub_type == "poster" ~ "misc",
+    !is.na(row$booktitle) & row$booktitle != "" ~ "inproceedings",
+    TRUE ~ "misc"
+  )
   
   # Build entry
   entry <- paste0("@", entry_type, "{", row$citekey, ",\n")
@@ -116,45 +125,87 @@ create_bibtex_entry <- function(row) {
     entry <- paste0(entry, "  note = {Google Scholar ID: ", row$pubid, "},\n")
   }
   
-  # Add keywords for filtering
-  if (!is.na(row$journal) && row$journal != "") {
-    entry <- paste0(entry, "  keywords = {journal},\n")
-  }
+  # Add keywords for filtering by publication type
+  entry <- paste0(entry, "  keywords = {", row$pub_type, "},\n")
   
   entry <- paste0(entry, "}\n")
   return(entry)
 }
 
-# Generate BibTeX content
-bibtex_content <- ""
-for (i in 1:nrow(pubs_clean)) {
-  bibtex_content <- paste0(
-    bibtex_content,
-    create_bibtex_entry(pubs_clean[i, ]),
-    "\n"
-  )
-}
-
-# Write to file
-cat("\nWriting to", OUTPUT_FILE, "...\n")
-writeLines(bibtex_content, OUTPUT_FILE)
-
-# Verify the file
-if (file.exists(OUTPUT_FILE)) {
-  file_size <- file.info(OUTPUT_FILE)$size
-  cat("Successfully wrote", file_size, "bytes to", OUTPUT_FILE, "\n")
+#' Write publications to BibTeX file
+#'
+#' @param pubs_clean Data frame with cleaned publication data
+#' @param output_file Path to output BibTeX file
+#' @return NULL (writes to file)
+#' @export
+write_bibtex <- function(pubs_clean, output_file) {
+  cat("\nConverting to BibTeX format...\n")
   
-  # Count entries
-  bib_lines <- readLines(OUTPUT_FILE)
-  n_entries <- sum(str_detect(bib_lines, "^@"))
-  cat("BibTeX file contains", n_entries, "entries\n")
-} else {
-  cat("ERROR: Failed to create output file\n")
-  quit(status = 1)
+  # Generate BibTeX content
+  bibtex_content <- ""
+  for (i in 1:nrow(pubs_clean)) {
+    bibtex_content <- paste0(
+      bibtex_content,
+      create_bibtex_entry(pubs_clean[i, ]),
+      "\n"
+    )
+  }
+  
+  # Write to file
+  cat("Writing to", output_file, "...\n")
+  writeLines(bibtex_content, output_file)
+  
+  # Verify the file
+  if (file.exists(output_file)) {
+    file_size <- file.info(output_file)$size
+    cat("Successfully wrote", file_size, "bytes to", output_file, "\n")
+    
+    # Count entries
+    bib_lines <- readLines(output_file)
+    n_entries <- sum(stringr::str_detect(bib_lines, "^@"))
+    cat("BibTeX file contains", n_entries, "entries\n")
+  } else {
+    cat("ERROR: Failed to create output file\n")
+    quit(status = 1)
+  }
 }
 
-cat("\n=== Publication update complete! ===\n")
-cat("Next steps:\n")
-cat("1. Review", OUTPUT_FILE, "for accuracy\n")
-cat("2. Commit changes to git\n")
-cat("3. Publications will appear on the Research page\n")
+# =============================================================================
+# Main execution
+# =============================================================================
+
+main <- function() {
+  # Configuration
+  SCHOLAR_ID <- "QbPv1H0AAAAJ"  # Lorenzo Fabbri's Google Scholar ID
+  OUTPUT_FILE <- "references.bib"
+  
+  cat("Starting publication update...\n")
+  
+  # Fetch publications
+  tryCatch({
+    pubs <- fetch_publications(SCHOLAR_ID)
+  }, error = function(e) {
+    cat("Error fetching publications:", e$message, "\n")
+    cat("Cannot continue without publication data.\n")
+    quit(status = 1)
+  })
+  
+  # Clean and categorize publications
+  pubs_clean <- clean_publications(pubs)
+  
+  # Display basic info
+  cat("\nPublications summary:\n")
+  print(head(pubs_clean[, c("title", "year", "journal", "pub_type")], 10))
+  
+  # Write to BibTeX file
+  write_bibtex(pubs_clean, OUTPUT_FILE)
+  
+  cat("\n=== Publication update complete! ===\n")
+  cat("Next steps:\n")
+  cat("1. Review", OUTPUT_FILE, "for accuracy\n")
+  cat("2. Commit changes to git\n")
+  cat("3. Publications will appear on the Research page\n")
+}
+
+# Run main function
+main()

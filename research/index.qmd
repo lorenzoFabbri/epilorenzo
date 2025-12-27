@@ -1,0 +1,46 @@
+---
+title: "Research"
+listing:
+  - id: articles
+    contents: "articles/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+    categories: true
+  - id: working-papers
+    contents: "working-papers/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+    categories: true
+  - id: posters
+    contents: "posters/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+    categories: true
+page-layout: full
+toc-location: right
+---
+
+My research focuses on [main research areas] using [methods/approaches]. I am particularly interested in [specific topics] with applications in [application domains].
+
+## Journal articles
+
+:::{#articles}
+:::
+
+## Working papers
+
+:::{#working-papers}
+:::
+
+## Conference posters
+
+:::{#posters}
+:::
+
+## Research software
+
+I develop and maintain research software available on [GitHub](https://github.com/lorenzoFabbri).
+
+---
+
+*For the most up-to-date list of publications, please see my [Google Scholar profile](https://scholar.google.com/citations?user=QbPv1H0AAAAJ&hl=en).*

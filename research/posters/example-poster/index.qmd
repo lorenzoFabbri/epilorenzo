@@ -1,0 +1,35 @@
+---
+title: "Example Conference Poster"
+date: 2024-09-20
+author:
+  - name: Lorenzo Fabbri
+    url: https://github.com/lorenzoFabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: Your University
+categories:
+  - Applied Microeconomics
+pub-info:
+  reference: >-
+    <strong>Lorenzo Fabbri</strong>, "Example Conference Poster," Presented at the Annual Economics Conference (September 2024)
+  links:
+    - name: Poster
+      url: poster.pdf
+      icon: fa-solid fa-file-image
+      local: true
+    - name: Code
+      url: https://github.com/lorenzoFabbri
+      icon: fa-brands fa-github
+---
+
+## Abstract
+
+This is an example poster entry. Replace this with your actual poster abstract. Conference posters are visual presentations of research displayed at academic conferences.
+
+**Conference:** Annual Economics Conference  
+**Location:** Conference City  
+**Date:** September 2024
+
+## Important links
+
+- [Poster (PDF)](poster.pdf)
+- [Code repository](https://github.com/lorenzoFabbri)

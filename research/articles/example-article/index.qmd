@@ -1,0 +1,58 @@
+---
+title: "Example Article Title"
+date: 2024-01-15
+author:
+  - name: Lorenzo Fabbri
+    url: https://github.com/lorenzoFabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: Your University
+categories:
+  - Economics
+  - Labor Economics
+pub-info:
+  reference: >-
+    <strong>Lorenzo Fabbri</strong>, "Example Article Title," <em>Journal of Economics</em> 45, no. 3 (2024): 123–145, doi: <a href="https://doi.org/10.1234/example"><code>10.1234/example</code></a>
+  links:
+    - name: Preprint
+      url: example.pdf
+      icon: fa-solid fa-file-pdf
+      local: true
+    - name: Final version
+      url: https://doi.org/10.1234/example
+      icon: fa-solid fa-scroll
+    - name: Code
+      url: https://github.com/lorenzoFabbri
+      icon: fa-brands fa-github
+    - name: Data
+      url: https://github.com/lorenzoFabbri
+      icon: fa-solid fa-table
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1234/example
+      icon: ai ai-zotero
+doi: 10.1234/example
+---
+
+## Abstract
+
+This is an example article entry. Replace this with your actual publication abstract. The abstract should clearly describe the research question, methodology, main findings, and contribution to the literature.
+
+## Important links
+
+- [Paper (preprint)](example.pdf)
+- [Published version](https://doi.org/10.1234/example)
+- [Code repository](https://github.com/lorenzoFabbri)
+
+## BibTeX citation
+
+```bibtex
+@article{fabbri2024example,
+  author = {Fabbri, Lorenzo},
+  title = {Example Article Title},
+  journal = {Journal of Economics},
+  year = {2024},
+  volume = {45},
+  number = {3},
+  pages = {123--145},
+  doi = {10.1234/example}
+}
+```

@@ -1,0 +1,32 @@
+- title: "Research Presentation Title"
+  date: 2025-12-15
+  description: "Talk at Annual Economics Conference"
+  location: Conference City, Country
+  links:
+  - name: Slides
+    url: https://github.com/lorenzoFabbri/talks
+    icon: fa-solid fa-chalkboard-user
+  - name: Paper
+    url: ../research/articles/example-article/
+    icon: fa-solid fa-file-lines
+
+- title: "Guest Lecture on Economic Policy"
+  date: 2025-09-20
+  description: "Guest lecture for graduate seminar"
+  location: University Name
+  links:
+  - name: Slides
+    url: https://github.com/lorenzoFabbri/talks
+    icon: fa-solid fa-chalkboard-user
+
+- title: "Workshop: Data Analysis in R"
+  date: 2025-06-10
+  description: "Workshop for doctoral students"
+  location: Your Department
+  links:
+  - name: Materials
+    url: https://github.com/lorenzoFabbri/talks
+    icon: fa-solid fa-up-right-from-square
+  - name: GitHub repository
+    url: https://github.com/lorenzoFabbri/talks
+    icon: fa-brands fa-github
