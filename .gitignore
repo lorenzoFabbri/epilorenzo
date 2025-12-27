@@ -57,3 +57,5 @@ __pycache__/
 .env.local
 
 **/*.quarto_ipynb
+
+/.luarc.json
