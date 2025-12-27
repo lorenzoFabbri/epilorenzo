@@ -1,0 +1,53 @@
+---
+title: "Talks & Presentations"
+page-layout: full
+---
+
+## Selected Presentations
+
+Below is a chronological list of my conference presentations, seminars, and invited talks. For slides and materials, visit my [talks repository](https://github.com/lorenzoFabbri/talks).
+
+::: {.talks-archive}
+[{{< fa brands github >}} View All Talks on GitHub](https://github.com/lorenzoFabbri/talks){.btn .btn-outline-primary}
+:::
+
+---
+
+## 2025
+
+| Date | Event | Title | Materials |
+|------|-------|-------|-----------|
+| Dec 2025 | Conference Name, Location | "Paper Title Here" | [Slides](https://github.com/lorenzoFabbri/talks) \| [Paper](research.qmd) |
+| Sep 2025 | University Seminar | "Research Presentation" | [Slides](https://github.com/lorenzoFabbri/talks) |
+| Jun 2025 | Workshop Name | "Talk Title" | [Slides](https://github.com/lorenzoFabbri/talks) \| [Video](#) |
+
+## 2024
+
+| Date | Event | Title | Materials |
+|------|-------|-------|-----------|
+| Nov 2024 | Conference Name | "Paper Title" | [Slides](https://github.com/lorenzoFabbri/talks) |
+| Aug 2024 | Summer School | "Lecture Title" | [Slides](https://github.com/lorenzoFabbri/talks) |
+| May 2024 | Department Seminar | "Presentation Title" | [Slides](https://github.com/lorenzoFabbri/talks) |
+
+---
+
+## Invited Talks & Seminars
+
+- **"Talk Title"**  
+  *Institution Name*, Date  
+  [Slides](https://github.com/lorenzoFabbri/talks)
+
+- **"Another Talk Title"**  
+  *Institution Name*, Date  
+  [Slides](https://github.com/lorenzoFabbri/talks) | [Video](#)
+
+---
+
+## Discussion & Panels
+
+- Discussant, "Paper Title" at Conference Name (Date)
+- Panel participant, "Panel Topic" at Event Name (Date)
+
+---
+
+*For complete slides and materials, please visit the [talks archive repository](https://github.com/lorenzoFabbri/talks).*

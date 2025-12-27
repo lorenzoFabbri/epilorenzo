@@ -1,0 +1,87 @@
+name: Update Publications from Google Scholar
+
+# Automatically fetch and update publications from Google Scholar
+# Runs weekly and can be triggered manually
+
+on:
+  # Run every Monday at 00:00 UTC
+  schedule:
+    - cron: '0 0 * * 1'
+  
+  # Allow manual triggering from Actions tab
+  workflow_dispatch:
+  
+  # Run on push to main (for testing)
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/update_publications.R'
+
+permissions:
+  contents: write
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.0'
+          use-public-rspm: true
+      
+      - name: Setup renv
+        uses: r-lib/actions/setup-renv@v2
+        with:
+          cache-version: 1
+      
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libxml2-dev libssl-dev
+      
+      - name: Restore renv library
+        run: |
+          R -e "renv::restore()"
+      
+      - name: Run publication update script
+        run: |
+          Rscript scripts/update_publications.R
+        env:
+          # Add any required environment variables here
+          R_LIBS_USER: ${{ github.workspace }}/renv/library/R-4.3/x86_64-pc-linux-gnu
+      
+      - name: Check for changes
+        id: verify_diff
+        run: |
+          git diff --quiet references.bib || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push changes
+        if: steps.verify_diff.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add references.bib
+          git commit -m "chore: update publications from Google Scholar [automated]"
+          git push
+      
+      - name: Summary
+        if: steps.verify_diff.outputs.changed == 'true'
+        run: |
+          echo "✅ Publications updated successfully!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "The references.bib file has been updated with the latest publications from Google Scholar." >> $GITHUB_STEP_SUMMARY
+      
+      - name: No changes summary
+        if: steps.verify_diff.outputs.changed != 'true'
+        run: |
+          echo "ℹ️ No new publications to update" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "The publications are already up to date." >> $GITHUB_STEP_SUMMARY
