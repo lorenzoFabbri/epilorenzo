@@ -1,0 +1,57 @@
+# R and renv
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+renv/library/
+renv/local/
+renv/staging/
+
+# Quarto
+/.quarto/
+_site/
+*_cache/
+*_files/
+docs/.quarto/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.log
+
+# Build artifacts
+*.pdf.tmp
+*.aux
+*.out
+*.toc
+
+# Node modules (if using any JS tools)
+node_modules/
+
+# Python (if using any Python tools)
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Environment files (keep .env.example if you create one)
+.env
+.env.local

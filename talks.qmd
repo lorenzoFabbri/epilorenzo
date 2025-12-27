@@ -1,0 +1,39 @@
+---
+title: "Talks & Presentations"
+listing:
+  - id: talks_2025
+    contents: talks/talks_2025.yml
+    sort: "date desc"
+    template: html/talks/listing.ejs
+  - id: talks_2024
+    contents: talks/talks_2024.yml
+    sort: "date desc"
+    template: html/talks/listing.ejs
+page-layout: full
+toc: true
+toc-location: right
+toc-title: Year
+date-format: "MMMM D, YYYY"
+---
+
+This page contains links and materials for various workshops, talks, lectures, and presentations I've given. Research presentations at conferences are typically stored in their respective repositories on GitHub. One-off workshops and talks can be found in a [catch-all GitHub repository](https://github.com/lorenzoFabbri/talks).
+
+::: {.callout-note}
+### Materials
+
+All slides and materials are © Lorenzo Fabbri and available for reuse under [Creative Commons CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+:::
+
+## 2025
+
+:::{#talks_2025}
+:::
+
+## 2024
+
+:::{#talks_2024}
+:::
+
+---
+
+*For complete slides and materials, please visit the [talks archive repository](https://github.com/lorenzoFabbri/talks).*

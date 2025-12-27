@@ -1,0 +1,28 @@
+---
+title: "Curriculum Vitae"
+page-layout: full
+---
+
+## Download CV
+
+::: {.download-section}
+[{{< fa file-pdf >}} Download Full CV (PDF)](https://github.com/lorenzoFabbri/cv-quarto/raw/main/cv.pdf){.btn .btn-primary .btn-lg target="_blank"}
+:::
+
+## CV Preview
+
+Below is a live preview of my curriculum vitae. You can download the full PDF using the button above.
+
+<iframe src="https://github.com/lorenzoFabbri/cv-quarto/blob/main/cv.pdf" width="100%" height="800px" style="border: 1px solid #ddd; margin-top: 20px;">
+  <p>Your browser does not support iframes. Please <a href="https://github.com/lorenzoFabbri/cv-quarto/raw/main/cv.pdf">download the CV</a> to view it.</p>
+</iframe>
+
+::: {.cv-alternative}
+*If the preview doesn't load, you can [view it directly on GitHub](https://github.com/lorenzoFabbri/cv-quarto/blob/main/cv.pdf) or [download the PDF](https://github.com/lorenzoFabbri/cv-quarto/raw/main/cv.pdf).*
+:::
+
+## Quick Links
+
+- [Research](research.qmd)
+- [Talks](talks.qmd)
+- [Blog](blog.qmd)

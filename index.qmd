@@ -1,0 +1,54 @@
+---
+title: "About"
+page-layout: full
+---
+
+# Lorenzo Fabbri
+
+**PhD Candidate in Economics**  
+*[Your Affiliation/University]*
+
+## About Me
+
+I am a PhD candidate in Economics specializing in [research area]. My research focuses on [primary research interests], with particular emphasis on [specific topics].
+
+## Research Interests
+
+- Applied Microeconomics
+- Labor Economics
+- Development Economics
+- Causal Inference and Econometric Methods
+- Policy Evaluation
+
+## Education
+
+- **PhD in Economics** (Expected 2025)  
+  *[University Name]*
+
+- **MA in Economics** (Year)  
+  *[University Name]*
+
+- **BA in Economics** (Year)  
+  *[University Name]*
+
+## News & Updates
+
+::: {.news}
+
+**December 2025**  
+Working on new research project examining [topic].
+
+**September 2025**  
+Presented at [Conference Name]. Slides available on the [Talks](talks.qmd) page.
+
+**June 2025**  
+New working paper on [topic] now available on the [Research](research.qmd) page.
+
+:::
+
+## Contact
+
+- **Email:** [your.email@university.edu]
+- **Office:** [Office location]
+
+You can find me on [GitHub](https://github.com/lorenzoFabbri), [LinkedIn](https://www.linkedin.com/in/lorenzo-fabbri-303185383/), [Bluesky](https://bsky.app/profile/epilorenzo.bsky.social), and [ORCID](https://orcid.org/my-orcid?orcid=0000-0003-3031-322X).

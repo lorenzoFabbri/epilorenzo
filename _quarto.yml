@@ -1,0 +1,86 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Lorenzo Fabbri"
+  description: "Academic website of Lorenzo Fabbri"
+  site-url: "https://lorenzofabbri.github.io/epilorenzo"
+  repo-url: "https://github.com/lorenzoFabbri/epilorenzo"
+  
+  # Navigation bar configuration
+  navbar:
+    background: light
+    logo: ""
+    left:
+      - text: "About"
+        href: index.qmd
+      - text: "CV"
+        href: cv.qmd
+      - text: "Research"
+        href: research/index.qmd
+      - text: "Blog"
+        href: blog.qmd
+      - text: "Talks"
+        href: talks.qmd
+      - text: "Now"
+        href: now.qmd
+    right:
+      - icon: github
+        href: https://github.com/lorenzoFabbri
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/lorenzo-fabbri-303185383/
+        aria-label: LinkedIn
+      - icon: twitter
+        href: https://bsky.app/profile/epilorenzo.bsky.social
+        aria-label: Bluesky
+      - text: "{{< ai orcid >}}"
+        href: https://orcid.org/my-orcid?orcid=0000-0003-3031-322X
+        aria-label: ORCID
+  
+  # Footer configuration
+  footer:
+    left: "© 2025 Lorenzo Fabbri. Built with [Quarto](https://quarto.org/)."
+    right:
+      - icon: github
+        href: https://github.com/lorenzoFabbri
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/lorenzo-fabbri-303185383/
+        aria-label: LinkedIn
+
+  # Blog configuration for posts
+  page-navigation: true
+
+# Format configuration
+format:
+  html:
+    theme: 
+      - flatly
+      - custom.css
+    css: custom.css
+    toc: true
+    toc-depth: 3
+    toc-location: right
+    link-external-newwindow: true
+    link-external-icon: true
+    code-fold: true
+    code-tools: true
+    anchor-sections: true
+    smooth-scroll: true
+    # Enable Bootstrap icons
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+# Citation and bibliography configuration
+bibliography: references.bib
+csl: apa.csl
+
+# Execution options
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false
