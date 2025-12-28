@@ -60,7 +60,9 @@ format:
     theme:
       - flatly
       - custom.css
-    css: custom.css
+    css:
+      - custom.css
+      - custom-books.css
     toc: true
     toc-depth: 3
     toc-location: right

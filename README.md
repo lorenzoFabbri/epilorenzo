@@ -7,17 +7,20 @@ My personal academic website built with Quarto and R. This site showcases my res
 ## Building Locally
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/lorenzoFabbri/epilorenzo.git
    cd epilorenzo
    ```
 
 2. Restore R packages with renv:
+
    ```bash
    R -e "renv::restore()"
    ```
 
 3. Render the website:
+
    ```bash
    quarto render
    ```
@@ -40,11 +43,13 @@ Publications are managed manually by adding `.qmd` files in the appropriate dire
 ### Adding a New Publication
 
 1. Create a new folder under the appropriate category:
+
    ```bash
    mkdir -p research/articles/my-paper-name
    ```
 
 2. Create an `index.qmd` file in the folder with the publication details:
+
    ```yaml
    ---
    title: "Your Paper Title"
@@ -68,9 +73,8 @@ Publications are managed manually by adding `.qmd` files in the appropriate dire
          url: https://doi.org/10.xxxx/xxxxx
          icon: fa-solid fa-scroll
    ---
-   
    ## Abstract
-   
+
    Your abstract here...
    ```
 
@@ -86,11 +90,13 @@ The publication will automatically appear on the Research page in the appropriat
 ## Writing Blog Posts
 
 1. Create a new folder in `posts/`:
+
    ```bash
    mkdir -p posts/my-new-post
    ```
 
 2. Create `index.qmd` with frontmatter:
+
    ```yaml
    ---
    title: "My Post Title"
@@ -115,6 +121,17 @@ The website automatically deploys to GitHub Pages when you push to `main`. Make 
 1. GitHub Pages is enabled in repository settings
 2. Source is set to "GitHub Actions"
 3. The workflow has proper permissions
+
+## Hardcover Integration
+
+The "Now" page features a dynamic integration with [Hardcover](https://hardcover.app) that automatically displays your currently reading books.
+
+Quick setup:
+
+1. Get your API token from https://hardcover.app/account/api
+2. Copy `_hardcover_config_example.R` to `_hardcover_config.R`
+3. Add your credentials to the config file
+4. Install required packages: `httr` and `jsonlite`
 
 ## License
 

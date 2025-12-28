@@ -3,6 +3,31 @@ title: "Now"
 page-layout: full
 ---
 
+```{r}
+#| echo: false
+#| output: asis
+#| warning: false
+#| message: false
+
+# Load Hardcover API functions
+source("_hardcover.R")
+
+# Load configuration (create _hardcover_config.R from _hardcover_config_example.R)
+if (file.exists("_hardcover_config.R")) {
+  source("_hardcover_config.R")
+  
+  # Fetch currently reading books
+  tryCatch({
+    books <- get_currently_reading(HARDCOVER_API_TOKEN, HARDCOVER_USER_ID)
+    cat("") # Placeholder for inline display below
+  }, error = function(e) {
+    cat("") # Silent fail, will show placeholder text
+  })
+} else {
+  cat("") # No config file, show placeholder
+}
+```
+
 # What I'm Doing Now
 
 *Last updated: December 2025*
@@ -17,7 +42,21 @@ This is a [now page](https://nownownow.com/about), inspired by Derek Sivers, des
 
 - Deepening my knowledge of [topic/method]
 - Learning [new skill/software]
-- Reading: [Book Title] by [Author]
+
+```{r}
+#| echo: false
+#| output: asis
+#| warning: false
+#| message: false
+
+# Display currently reading books
+if (exists("books") && !is.null(books) && nrow(books) > 0) {
+  cat("- **Currently Reading:**\n\n")
+  knitr::asis_output(display_books_html(books))
+} else {
+  "- Reading: [Book Title] by [Author]\n"
+}
+```
 
 ## Recent Accomplishments
 

@@ -1,0 +1,56 @@
+/* Custom CSS for Hardcover book grid */
+.hardcover-books-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 10px 0;
+  justify-content: flex-start;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  overflow-x: auto;
+}
+
+.hardcover-book-card {
+  margin: 4px;
+  width: 60px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.hardcover-book-card img {
+  width: 60px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hardcover-book-card .meta {
+  margin-top: 4px;
+}
+
+.hardcover-book-card .title {
+  font-size: 0.7em;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.hardcover-book-card .author {
+  font-size: 0.6em;
+  color: #666;
+}
+
+.hardcover-book-card .no-cover {
+  width: 60px;
+  height: 90px;
+  background: #ddd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}

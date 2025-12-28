@@ -34,3 +34,12 @@ Working on new research project examining [topic].
 - **Office:** [Office location]
 
 You can find me on [GitHub](https://github.com/lorenzoFabbri), [LinkedIn](https://www.linkedin.com/in/lorenzo-fabbri-303185383/), [ORCID](https://orcid.org/my-orcid?orcid=0000-0003-3031-322X), and [Bluesky](https://bsky.app/profile/epilorenzo.bsky.social).
+
+---
+
+<div style="margin-top: 2em; text-align: center;">
+  <a href="https://www.buymeacoffee.com/epilorenzo" target="_blank" style="text-decoration: none; color: #FFDD00;">
+    <i class="fa-solid fa-mug-hot" style="font-size: 1.5em;"></i> 
+    <span style="margin-left: 0.5em; font-size: 1.1em; vertical-align: middle;">Buy Me a Coffee</span>
+  </a>
+</div>

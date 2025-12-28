@@ -53,6 +53,12 @@ jobs:
         run: |
           R -e "renv::restore()"
 
+      - name: Create Hardcover config
+        run: |
+          echo "HARDCOVER_API_TOKEN <- \"${{ secrets.HARDCOVER_API_TOKEN }}\"" > _hardcover_config.R
+          echo "HARDCOVER_USER_ID <- \"${{ secrets.HARDCOVER_USER_ID }}\"" >> _hardcover_config.R
+        shell: bash
+
       - name: Render Quarto website
         run: |
           quarto render

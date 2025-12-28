@@ -48,6 +48,9 @@ node_modules/
 
 # Python (if using any Python tools)
 __pycache__/
+
+# Hardcover API credentials
+_hardcover_config.R
 *.py[cod]
 *$py.class
 .ipynb_checkpoints/
