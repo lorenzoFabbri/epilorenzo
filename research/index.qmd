@@ -6,11 +6,6 @@ listing:
     sort: "date desc"
     template: ../assets/templates/research/listing.ejs
     categories: true
-  - id: working-papers
-    contents: "working-papers/*/index.qmd"
-    sort: "date desc"
-    template: ../assets/templates/research/listing.ejs
-    categories: true
   - id: posters
     contents: "posters/*/index.qmd"
     sort: "date desc"
@@ -25,11 +20,6 @@ My research focuses on the environmental and social determinants of cancer, usin
 ## Journal articles
 
 :::{#articles}
-:::
-
-## Working papers
-
-:::{#working-papers}
 :::
 
 ## Conference posters
