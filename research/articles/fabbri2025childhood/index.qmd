@@ -1,0 +1,50 @@
+---
+title: "Childhood exposure to non-persistent endocrine disruptors, glucocorticosteroids, and attentional function: A cross-sectional study based on the parametric g-formula"
+date: 2025-01-01
+author:
+  - name: Lorenzo Fabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: ISGlobal, Universitat Pompeu Fabra
+categories:
+  - Causal Inference
+  - Environmental Epidemiology
+  - Endocrine Disruptors
+  - Neurodevelopment
+pub-info:
+  reference: >-
+    <strong>Fabbri L</strong>, Robinson O, Basaga&ntilde;a X, Chatzi L, Gra&#382;ulevi&#269;ien&#279; R, Guxens M, Kadawathagedara M, Sakhi AK, Maitre L, McEachan R, et al. "Childhood exposure to non-persistent endocrine disruptors, glucocorticosteroids, and attentional function: A cross-sectional study based on the parametric g-formula." <em>Environmental Research</em> 264 (2025): 120413, doi: <a href="https://doi.org/10.1016/j.envres.2024.120413"><code>10.1016/j.envres.2024.120413</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1016/j.envres.2024.120413
+      icon: fa-solid fa-scroll
+    - name: Code
+      url: https://github.com/lorenzoFabbri/paper-helixSC-neuro
+      icon: fa-brands fa-github
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1016/j.envres.2024.120413
+      icon: ai ai-zotero
+doi: 10.1016/j.envres.2024.120413
+---
+
+## Abstract
+
+Available at the [journal website](https://doi.org/10.1016/j.envres.2024.120413).
+
+## Important links
+
+- [Published version](https://doi.org/10.1016/j.envres.2024.120413)
+- [Code repository](https://github.com/lorenzoFabbri/paper-helixSC-neuro)
+
+## BibTeX citation
+
+```bibtex
+@article{fabbri2025childhood,
+  title={Childhood exposure to non-persistent endocrine disruptors, glucocorticosteroids, and attentional function: A cross-sectional study based on the parametric g-formula},
+  author={Fabbri, Lorenzo and Robinson, Oliver and Basaga{\~n}a, Xavier and Chatzi, Leda and Gra{\v{z}}ulevi{\v{c}}ien{\.{e}}, Regina and Guxens, M{\`o}nica and Kadawathagedara, Manik and Sakhi, Amrit Kaur and Maitre, L{\'e}a and McEachan, Rosemary and others},
+  journal={Environmental Research},
+  volume={264},
+  pages={120413},
+  year={2025},
+  publisher={Elsevier BV}
+}
+```

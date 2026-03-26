@@ -5,41 +5,35 @@ page-layout: full
 
 # Lorenzo Fabbri
 
-**Position**  
-*[Your Affiliation/University]*
+**Postdoctoral Fellow** *(incoming)* at the *[Centro Nacional de Investigaciones Oncológicas (CNIO)](https://www.cnio.es/)*.
 
 ## About Me
 
-I am a [position/role] specializing in [research area]. My research focuses on [primary research interests], with particular emphasis on [specific topics].
+I am an aspiring cancer epidemiologist with a focus on the environmental and social determinants of cancer. My work combines transparent causal inference methods with evidence triangulation strategies to strengthen causal conclusions in observational epidemiology. I completed my PhD in Biomedicine at Universitat Pompeu Fabra (2021–2025) within the Childhood and Environment research group at ISGlobal, under the supervision of Prof. Martine Vrijheid. I am originally from San Marino 🇸🇲 and currently based in Spain 🇪🇸.
 
 ## Research Interests
 
+- Cancer epidemiology: environmental and social determinants.
+- Causal inference in observational studies.
+- Evidence triangulation.
+
 ## Education
 
-- **BA in [degree]** (Year)  
-  *[University Name]*
+- **PhD in Biomedicine** (*Universitat Pompeu Fabra, Spain*).
+
+- **M.Sc. in Quantitative and Computational Biology** (*University of Trento, Italy*).
+
+- **B.Sc. in Biotechnology** (*University of Parma, Italy*).
 
 ## News & Updates
 
 ::: {.news}
 
-**December 2025**  
-Working on new research project examining [topic].
+**March 2026**
+Incoming postdoctoral fellow at CNIO.
 
 :::
 
 ## Contact
 
-- **Email:** [email]
-- **Office:** [Office location]
-
-You can find me on [GitHub](https://github.com/lorenzoFabbri), [LinkedIn](https://www.linkedin.com/in/lorenzo-fabbri-303185383/), [ORCID](https://orcid.org/my-orcid?orcid=0000-0003-3031-322X), and [Bluesky](https://bsky.app/profile/epilorenzo.bsky.social).
-
----
-
-<div style="margin-top: 2em; text-align: center;">
-  <a href="https://www.buymeacoffee.com/epilorenzo" target="_blank" style="text-decoration: none; color: #FFDD00;">
-    <i class="fa-solid fa-mug-hot" style="font-size: 1.5em;"></i> 
-    <span style="margin-left: 0.5em; font-size: 1.1em; vertical-align: middle;">Buy Me a Coffee</span>
-  </a>
-</div>
+You can find me on [GitHub](https://github.com/lorenzoFabbri), [ORCiD](https://orcid.org/0000-0003-3031-322X), [Google Scholar](https://scholar.google.com/citations?user=QbPv1H0AAAAJ&hl=en&sortby=pubdate), [LinkedIn](https://www.linkedin.com/in/lorenzo-fabbri-303185383/), and [Bluesky](https://bsky.app/profile/epilorenzo.bsky.social).

@@ -4,23 +4,23 @@ listing:
   - id: articles
     contents: "articles/*/index.qmd"
     sort: "date desc"
-    template: ../html/research/listing.ejs
+    template: ../assets/templates/research/listing.ejs
     categories: true
   - id: working-papers
     contents: "working-papers/*/index.qmd"
     sort: "date desc"
-    template: ../html/research/listing.ejs
+    template: ../assets/templates/research/listing.ejs
     categories: true
   - id: posters
     contents: "posters/*/index.qmd"
     sort: "date desc"
-    template: ../html/research/listing.ejs
+    template: ../assets/templates/research/listing.ejs
     categories: true
 page-layout: full
 toc-location: right
 ---
 
-My research focuses on [main research areas] using [methods/approaches]. I am particularly interested in [specific topics] with applications in [application domains].
+My research focuses on the environmental and social determinants of cancer, using causal inference and evidence triangulation to strengthen causal conclusions from observational data.
 
 ## Journal articles
 
@@ -39,7 +39,10 @@ My research focuses on [main research areas] using [methods/approaches]. I am pa
 
 ## Research software
 
-I develop and maintain research software available on [GitHub](https://github.com/lorenzoFabbri).
+- [`forrest`](https://github.com/lorenzoFabbri/forrest): R package to create publication-ready forest plots (epidemiology, meta-analysis).
+- [`negatr`](https://github.com/etverse/negatr): R package for negative control analysis — detecting and correcting unmeasured confounding in epidemiological studies.
+- [`orcidtr`](https://github.com/lorenzoFabbri/orcidtr): R package to retrieve data from the ORCID public API. Available on [CRAN](https://cran.r-project.org/package=orcidtr).
+- [`manuscripts`](https://github.com/lorenzoFabbri/manuscripts): Template for writing scientific manuscripts using Markdown and Zotero.
 
 ---
 

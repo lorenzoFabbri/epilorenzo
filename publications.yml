@@ -1,0 +1,144 @@
+# Source of truth for all publications.
+# The generate_publications.py script reads this file and fetches metadata
+# from CrossRef / DataCite for each DOI, then writes research/articles/*/index.qmd
+# and research/posters/*/index.qmd.
+#
+# Required per entry: doi OR (slug + manual section for DOI-less items)
+# Optional per entry: slug (auto-derived), github, categories, extra_links, notes
+
+orcid: "0000-0003-3031-322X"
+contact_email: "lorenzocarmine.fabbri@gmail.com"  # used for CrossRef polite pool
+
+articles:
+  - doi: "10.1371/journal.pcbi.1005280"
+    slug: "thiel2017comparative"
+    categories:
+      - Computational Biology
+      - Systems Biology
+      - Toxicology
+
+  - doi: "10.1016/j.envint.2023.107856"
+    slug: "fabbri2023childhood"
+    github: "https://github.com/lorenzoFabbri/paper-helix-multiOmics"
+    categories:
+      - Multi-omics
+      - Endocrine Disruptors
+      - Environmental Epidemiology
+      - Exposome
+
+  - doi: "10.1001/jamanetworkopen.2024.12040"
+    slug: "guil2024prenatal"
+    categories:
+      - Exposome
+      - Metabolic Health
+      - Environmental Epidemiology
+      - Mixtures
+
+  - doi: "10.1038/s41366-024-01657-6"
+    slug: "warkentin2025dietary"
+    categories:
+      - Nutrition
+      - Epidemiology
+      - Child Health
+
+  - doi: "10.1016/j.envres.2024.120413"
+    slug: "fabbri2025childhood"
+    github: "https://github.com/lorenzoFabbri/paper-helixSC-neuro"
+    categories:
+      - Causal Inference
+      - Environmental Epidemiology
+      - Endocrine Disruptors
+      - Neurodevelopment
+
+  - doi: "10.1016/j.envint.2025.109927"
+    slug: "fabbri2025prenatal"
+    github: "https://github.com/lorenzoFabbri/paper-athlete-neuro"
+    categories:
+      - Causal Inference
+      - Environmental Epidemiology
+      - Endocrine Disruptors
+      - Neurodevelopment
+      - Mixtures
+
+  - doi: "10.1038/s41467-025-56013-7"
+    slug: "stratakis2025multi"
+    categories:
+      - Multi-omics
+      - Exposome
+      - Metabolic Health
+      - Child Health
+
+posters:
+  - doi: "10.6084/M9.FIGSHARE.17708726.V3"
+    slug: "fabbri2017efficient"
+    year: 2017   # figshare DOI returns upload year (2021); override with actual conference year
+    conference: "Platform for Advanced Scientific Computing (PASC) 2017"
+    categories:
+      - Computational Methods
+      - Bayesian Statistics
+    authors:   # figshare record only lists the uploader; provide full author list manually
+      - {given: "Lorenzo", family: "Fabbri"}
+      - {given: "Avinash", family: "Ummadisingu"}
+      - {given: "Ritabrata", family: "Dutta"}
+      - {given: "Radim", family: "Janal\u00EDk"}
+      - {given: "Antonietta", family: "Mira"}
+      - {given: "Olaf", family: "Schenk"}
+      - {given: "Marcel", family: "Schoengens"}
+    extra_links:
+      - name: "Poster"
+        url: "https://doi.org/10.6084/M9.FIGSHARE.17708726.V3"
+        icon: "fa-solid fa-file-image"
+
+  # No single primary DOI — two separate figshare uploads for the same poster
+  - slug: "fabbri2022childhood"
+    manual:
+      title: "Childhood exposure to non-persistent endocrine disrupting chemicals and multi-omic markers in a population-based child cohort"
+      year: 2022
+      authors:
+        - {given: "Lorenzo", family: "Fabbri"}
+        - {given: "Ronan", family: "Garlantézec"}
+        - {given: "Cathrine", family: "Thomsen"}
+        - {given: "John", family: "Wright"}
+        - {given: "Rémy", family: "Slama"}
+        - {given: "Barbara", family: "Heude"}
+        - {given: "Regina", family: "Gražulevičienė"}
+        - {given: "Leda", family: "Chatzi"}
+        - {given: "Chung-Ho E", family: "Lau"}
+        - {given: "Alexandros P", family: "Siskos"}
+        - {given: "others", family: ""}
+      conference: "EURION Annual Meeting and PPTOX-VII International Conference on Prenatal Programming and Toxicity Meeting (2022)"
+    categories:
+      - Multi-omics
+      - Endocrine Disruptors
+      - Environmental Epidemiology
+    extra_links:
+      - name: "Poster (EURION)"
+        url: "https://doi.org/10.6084/M9.FIGSHARE.18888155.V1"
+        icon: "fa-solid fa-file-image"
+      - name: "Poster (PPTOX-VII)"
+        url: "https://doi.org/10.6084/M9.FIGSHARE.17708729.V2"
+        icon: "fa-solid fa-file-image"
+
+  - doi: "10.1289/isee.2024.1562"
+    slug: "guil2024prenatal"
+    conference: "ISEE Annual Conference 2024"
+    categories:
+      - Exposome
+      - Metabolic Health
+      - Environmental Epidemiology
+    extra_links:
+      - name: "Abstract"
+        url: "https://doi.org/10.1289/isee.2024.1562"
+        icon: "fa-solid fa-scroll"
+
+  - doi: "10.1289/isee.2024.0593"
+    slug: "stratakis2024precision"
+    conference: "ISEE Annual Conference 2024"
+    categories:
+      - Multi-omics
+      - Exposome
+      - Metabolic Health
+    extra_links:
+      - name: "Abstract"
+        url: "https://doi.org/10.1289/isee.2024.0593"
+        icon: "fa-solid fa-scroll"

@@ -1,0 +1,35 @@
+---
+title: "Efficient and Portable MPI Support for Approximate Bayesian Computation"
+date: 2017-01-01
+author:
+  - name: Lorenzo Fabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: ISGlobal, Universitat Pompeu Fabra
+categories:
+  - Computational Methods
+  - Bayesian Statistics
+pub-info:
+  reference: >-
+    <strong>Fabbri L</strong>, Ummadisingu A, Dutta R, Janal&iacute;k R, Mira A, Schenk O, Schoengens M. "Efficient and Portable MPI Support for Approximate Bayesian Computation." Presented at the Platform for Advanced Scientific Computing (PASC) 2017 (2017). doi: <a href="https://doi.org/10.6084/M9.FIGSHARE.17708726.V3"><code>10.6084/M9.FIGSHARE.17708726.V3</code></a>
+  links:
+    - name: Poster
+      url: https://doi.org/10.6084/M9.FIGSHARE.17708726.V3
+      icon: fa-solid fa-file-image
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.6084/M9.FIGSHARE.17708726.V3
+      icon: ai ai-zotero
+doi: 10.6084/M9.FIGSHARE.17708726.V3
+---
+
+**Conference:** Platform for Advanced Scientific Computing (PASC) 2017
+
+## BibTeX citation
+
+```bibtex
+@inproceedings{fabbri2017efficient,
+  title={Efficient and Portable MPI Support for Approximate Bayesian Computation},
+  author={Fabbri, Lorenzo and Ummadisingu, Avinash and Dutta, Ritabrata and Janal{\'i}k, Radim and Mira, Antonietta and Schenk, Olaf and Schoengens, Marcel},
+  booktitle={Platform for Advanced Scientific Computing (PASC) 2017},
+  year={2017}
+}
+```

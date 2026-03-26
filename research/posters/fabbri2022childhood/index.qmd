@@ -1,0 +1,35 @@
+---
+title: "Childhood exposure to non-persistent endocrine disrupting chemicals and multi-omic markers in a population-based child cohort"
+date: 2022-01-01
+author:
+  - name: Lorenzo Fabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: ISGlobal, Universitat Pompeu Fabra
+categories:
+  - Multi-omics
+  - Endocrine Disruptors
+  - Environmental Epidemiology
+pub-info:
+  reference: >-
+    <strong>Fabbri L</strong>, Garlant&eacute;zec R, Thomsen C, Wright J, Slama R, Heude B, Gra&#382;ulevi&#269;ien&#279; R, Chatzi L, Lau CE, Siskos AP, et al. "Childhood exposure to non-persistent endocrine disrupting chemicals and multi-omic markers in a population-based child cohort." Presented at the EURION Annual Meeting and PPTOX-VII International Conference on Prenatal Programming and Toxicity Meeting (2022) (2022).
+  links:
+    - name: Poster (EURION)
+      url: https://doi.org/10.6084/M9.FIGSHARE.18888155.V1
+      icon: fa-solid fa-file-image
+    - name: Poster (PPTOX-VII)
+      url: https://doi.org/10.6084/M9.FIGSHARE.17708729.V2
+      icon: fa-solid fa-file-image
+---
+
+**Conference:** EURION Annual Meeting and PPTOX-VII International Conference on Prenatal Programming and Toxicity Meeting (2022)
+
+## BibTeX citation
+
+```bibtex
+@inproceedings{fabbri2022childhood,
+  title={Childhood exposure to non-persistent endocrine disrupting chemicals and multi-omic markers in a population-based child cohort},
+  author={Fabbri, Lorenzo and Garlant{\'e}zec, Ronan and Thomsen, Cathrine and Wright, John and Slama, R{\'e}my and Heude, Barbara and Gra{\v{z}}ulevi{\v{c}}ien{\.{e}}, Regina and Chatzi, Leda and Lau, Chung-Ho E and Siskos, Alexandros P},
+  booktitle={EURION Annual Meeting and PPTOX-VII International Conference on Prenatal Programming and Toxicity Meeting (2022)},
+  year={2022}
+}
+```

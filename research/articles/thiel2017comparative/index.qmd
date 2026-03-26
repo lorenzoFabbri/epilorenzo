@@ -1,0 +1,45 @@
+---
+title: "A Comparative Analysis of Drug-Induced Hepatotoxicity in Clinically Relevant Situations"
+date: 2017-01-01
+author:
+  - name: Lorenzo Fabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: ISGlobal, Universitat Pompeu Fabra
+categories:
+  - Computational Biology
+  - Systems Biology
+  - Toxicology
+pub-info:
+  reference: >-
+    Thiel C, Cordes H, <strong>Fabbri L</strong>, Aschmann HE, Baier V, Smit I, Atkinson F, Blank LM, Kuepfer L. "A Comparative Analysis of Drug-Induced Hepatotoxicity in Clinically Relevant Situations." <em>PLOS Computational Biology</em> 13 (2017): e1005280, doi: <a href="https://doi.org/10.1371/journal.pcbi.1005280"><code>10.1371/journal.pcbi.1005280</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1371/journal.pcbi.1005280
+      icon: fa-solid fa-scroll
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1371/journal.pcbi.1005280
+      icon: ai ai-zotero
+doi: 10.1371/journal.pcbi.1005280
+---
+
+## Abstract
+
+Available at the [journal website](https://doi.org/10.1371/journal.pcbi.1005280).
+
+## Important links
+
+- [Published version](https://doi.org/10.1371/journal.pcbi.1005280)
+
+## BibTeX citation
+
+```bibtex
+@article{thiel2017comparative,
+  title={A Comparative Analysis of Drug-Induced Hepatotoxicity in Clinically Relevant Situations},
+  author={Thiel, Christoph and Cordes, Henrik and Fabbri, Lorenzo and Aschmann, H{\'e}l{\`e}ne Eloise and Baier, Vanessa and Smit, Ines and Atkinson, Francis and Blank, Lars Mathias and Kuepfer, Lars},
+  journal={PLOS Computational Biology},
+  volume={13},
+  pages={e1005280},
+  year={2017},
+  publisher={Public Library of Science (PLoS)}
+}
+```

@@ -1,0 +1,46 @@
+---
+title: "Prenatal Exposure to Chemical Mixtures and Metabolic Syndrome Risk in Children"
+date: 2024-01-01
+author:
+  - name: Lorenzo Fabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: ISGlobal, Universitat Pompeu Fabra
+categories:
+  - Exposome
+  - Metabolic Health
+  - Environmental Epidemiology
+  - Mixtures
+pub-info:
+  reference: >-
+    G&uuml;il-Oumrait N, Stratakis N, Maitre L, Anguita-Ruiz A, Urquiza J, <strong>Fabbri L</strong>, Basaga&ntilde;a X, Heude B, Haug LS, Sakhi AK, et al. "Prenatal Exposure to Chemical Mixtures and Metabolic Syndrome Risk in Children." <em>JAMA Network Open</em> 7 (2024): e2412040, doi: <a href="https://doi.org/10.1001/jamanetworkopen.2024.12040"><code>10.1001/jamanetworkopen.2024.12040</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1001/jamanetworkopen.2024.12040
+      icon: fa-solid fa-scroll
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1001/jamanetworkopen.2024.12040
+      icon: ai ai-zotero
+doi: 10.1001/jamanetworkopen.2024.12040
+---
+
+## Abstract
+
+ImportancePrenatal exposure to ubiquitous endocrine-disrupting chemicals (EDCs) may increase the risk of metabolic syndrome (MetS) in children, but few studies have studied chemical mixtures or explored underlying protein and metabolic signatures.ObjectiveTo investigate associations of prenatal exposure to EDC mixtures with MetS risk score in children and identify associated proteins and metabolites.Design, Setting, and ParticipantsThis population-based, birth cohort study used data collected between April 1, 2003, and February 26, 2016, from the Human Early Life Exposome cohort based in France, Greece, Lithuania, Norway, Spain, and the UK. Eligible participants included mother-child pairs with measured prenatal EDC exposures and complete data on childhood MetS risk factors, proteins, and metabolites. Data were analyzed between October 2022 and July 2023.ExposuresNine metals, 3 organochlorine pesticides, 5 polychlorinated biphenyls, 2 polybrominated diphenyl ethers (PBDEs), 5 perfluoroalkyl substances (PFAS), 10 phthalate metabolites, 3 phenols, 4 parabens, and 4 organophosphate pesticide metabolites measured in urine and blood samples collected during pregnancy.Main Outcomes and MeasuresAt 6 to 11 years of age, a composite MetS risk score was constructed using z scores of waist circumference, systolic and diastolic blood pressures, triglycerides, high-density lipoprotein cholesterol, and insulin levels. Childhood levels of 44 urinary metabolites, 177 serum metabolites, and 35 plasma proteins were quantified using targeted methods. Associations were assessed using bayesian weighted quantile sum regressions applied to mixtures for each chemical group.ResultsThe study included 1134 mothers (mean [SD] age at birth, 30.7 [4.9] years) and their children (mean [SD] age, 7.8 [1.5] years; 617 male children [54.4%] and 517 female children [45.6%]; mean [SD] MetS risk score, −0.1 [2.3]). MetS score increased per 1-quartile increase of the mixture for metals (β = 0.44; 95% credible interval [CrI], 0.30 to 0.59), organochlorine pesticides (β = 0.22; 95% CrI, 0.15 to 0.29), PBDEs (β = 0.17; 95% CrI, 0.06 to 0.27), and PFAS (β = 0.19; 95% CrI, 0.14 to 0.24). High-molecular weight phthalate mixtures (β = −0.07; 95% CrI, −0.10 to −0.04) and low-molecular weight phthalate mixtures (β = −0.13; 95% CrI, −0.18 to −0.08) were associated with a decreased MetS score. Most EDC mixtures were associated with elevated proinflammatory proteins, amino acids, and altered glycerophospholipids, which in turn were associated with increased MetS score.Conclusions and RelevanceThis cohort study suggests that prenatal exposure to EDC mixtures may be associated with adverse metabolic health in children. Given the pervasive nature of EDCs and the increase in MetS, these findings hold substantial public health implications.
+
+## Important links
+
+- [Published version](https://doi.org/10.1001/jamanetworkopen.2024.12040)
+
+## BibTeX citation
+
+```bibtex
+@article{guil2024prenatal,
+  title={Prenatal Exposure to Chemical Mixtures and Metabolic Syndrome Risk in Children},
+  author={G{\"u}il-Oumrait, Nuria and Stratakis, Nikos and Maitre, L{\'e}a and Anguita-Ruiz, Augusto and Urquiza, Jose and Fabbri, Lorenzo and Basaga{\~n}a, Xavier and Heude, Barbara and Haug, Line Sm{\aa}stuen and Sakhi, Amrit Kaur and others},
+  journal={JAMA Network Open},
+  volume={7},
+  pages={e2412040},
+  year={2024},
+  publisher={American Medical Association (AMA)}
+}
+```

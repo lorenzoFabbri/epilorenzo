@@ -1,11 +1,8 @@
-- title: "Research Presentation Title"
-  date: 2025-12-15
-  description: "Talk at Annual Economics Conference"
-  location: Conference City, Country
+- title: "Transparent causal inference for observational epidemiology"
+  date: 2025-01-22
+  description: "Invited talk at Colicino's group, Mount Sinai (online group meeting)."
+  location: Online
   links:
     - name: Slides
-      url: https://github.com/lorenzoFabbri/talks
+      url: https://github.com/lorenzoFabbri/talks/blob/main/20250122_colicino.pdf
       icon: fa-solid fa-chalkboard-user
-    - name: Paper
-      url: ../research/articles/example-article/
-      icon: fa-solid fa-file-lines

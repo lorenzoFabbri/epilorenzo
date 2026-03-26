@@ -1,0 +1,45 @@
+---
+title: "Dietary patterns among European children and their association with adiposity-related outcomes: a multi-country study"
+date: 2024-01-01
+author:
+  - name: Lorenzo Fabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: ISGlobal, Universitat Pompeu Fabra
+categories:
+  - Nutrition
+  - Epidemiology
+  - Child Health
+pub-info:
+  reference: >-
+    Warkentin S, Stratakis N, <strong>Fabbri L</strong>, Wright J, Yang TC, Bryant M, Heude B, Slama R, Montazeri P, Vafeiadi M, et al. "Dietary patterns among European children and their association with adiposity-related outcomes: a multi-country study." <em>International Journal of Obesity</em> 49 (2024): 295-305, doi: <a href="https://doi.org/10.1038/s41366-024-01657-6"><code>10.1038/s41366-024-01657-6</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1038/s41366-024-01657-6
+      icon: fa-solid fa-scroll
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1038/s41366-024-01657-6
+      icon: ai ai-zotero
+doi: 10.1038/s41366-024-01657-6
+---
+
+## Abstract
+
+Available at the [journal website](https://doi.org/10.1038/s41366-024-01657-6).
+
+## Important links
+
+- [Published version](https://doi.org/10.1038/s41366-024-01657-6)
+
+## BibTeX citation
+
+```bibtex
+@article{warkentin2025dietary,
+  title={Dietary patterns among European children and their association with adiposity-related outcomes: a multi-country study},
+  author={Warkentin, Sarah and Stratakis, Nikos and Fabbri, Lorenzo and Wright, John and Yang, Tiffany C. and Bryant, Maria and Heude, Barbara and Slama, Remy and Montazeri, Parisa and Vafeiadi, Marina and others},
+  journal={International Journal of Obesity},
+  volume={49},
+  pages={295-305},
+  year={2024},
+  publisher={Springer Science and Business Media LLC}
+}
+```

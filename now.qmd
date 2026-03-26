@@ -10,7 +10,7 @@ page-layout: full
 #| message: false
 
 # Load Hardcover API functions
-source("_hardcover.R")
+source("scripts/hardcover.R")
 
 # Load configuration (create _hardcover_config.R from _hardcover_config_example.R)
 if (file.exists("_hardcover_config.R")) {
@@ -30,7 +30,7 @@ if (file.exists("_hardcover_config.R")) {
 
 # What I'm Doing Now
 
-*Last updated: December 2025*
+*Last updated: March 2026*
 
 This is a [now page](https://nownownow.com/about), inspired by Derek Sivers, describing what I'm currently focused on.
 
@@ -38,10 +38,14 @@ This is a [now page](https://nownownow.com/about), inspired by Derek Sivers, des
 
 ### Research
 
+Preparing for my incoming postdoctoral fellowship at CNIO, focused on pancreatic and bladder cancer.
+
 ### Learning
 
-- Deepening my knowledge of [topic/method]
-- Learning [new skill/software]
+- Postgraduate Certificate in Public Health (LSHTM).
+- Graduate Certificate in Theoretical Statistics and Probability (OU).
+- Master in Public Health (UNED).
+- Master in Economic Analysis (UOC).
 
 ```{r}
 #| echo: false
@@ -60,13 +64,17 @@ if (exists("books") && !is.null(books) && nrow(books) > 0) {
 
 ## Recent Accomplishments
 
-- Published new working paper (see [Research](research/index.qmd))
+- Completed my PhD in Biomedicine at Universitat Pompeu Fabra (December 2025).
 
 ## Upcoming
 
+- Starting postdoctoral fellowship at CNIO.
+
 ## Side Projects
 
-- Building [project description]
+- [`forrest`](https://github.com/lorenzoFabbri/forrest): R package for publication-ready forest plots.
+- [`negatr`](https://github.com/etverse/negatr): R package for negative control analysis in epidemiology.
+- [`orcidtr`](https://github.com/lorenzoFabbri/orcidtr): R package to access the ORCID public API.
 
 ---
 

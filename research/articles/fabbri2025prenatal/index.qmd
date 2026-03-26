@@ -1,0 +1,51 @@
+---
+title: "Prenatal and childhood exposure to mixtures of environmental chemicals and adolescence attentional problems: a triangulation study"
+date: 2025-01-01
+author:
+  - name: Lorenzo Fabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: ISGlobal, Universitat Pompeu Fabra
+categories:
+  - Causal Inference
+  - Environmental Epidemiology
+  - Endocrine Disruptors
+  - Neurodevelopment
+  - Mixtures
+pub-info:
+  reference: >-
+    <strong>Fabbri L</strong>, Andru&#353;aityt&#279; S, Basaga&ntilde;a X, Bhopal S, Bustamante M, Cheung RW, Gra&#382;ulevi&#269;ien&#279; R, Guxens M, Kadawathagedara M, Kampouri M, et al. "Prenatal and childhood exposure to mixtures of environmental chemicals and adolescence attentional problems: a triangulation study." <em>Environment International</em> 206 (2025): 109927, doi: <a href="https://doi.org/10.1016/j.envint.2025.109927"><code>10.1016/j.envint.2025.109927</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1016/j.envint.2025.109927
+      icon: fa-solid fa-scroll
+    - name: Code
+      url: https://github.com/lorenzoFabbri/paper-athlete-neuro
+      icon: fa-brands fa-github
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1016/j.envint.2025.109927
+      icon: ai ai-zotero
+doi: 10.1016/j.envint.2025.109927
+---
+
+## Abstract
+
+Available at the [journal website](https://doi.org/10.1016/j.envint.2025.109927).
+
+## Important links
+
+- [Published version](https://doi.org/10.1016/j.envint.2025.109927)
+- [Code repository](https://github.com/lorenzoFabbri/paper-athlete-neuro)
+
+## BibTeX citation
+
+```bibtex
+@article{fabbri2025prenatal,
+  title={Prenatal and childhood exposure to mixtures of environmental chemicals and adolescence attentional problems: a triangulation study},
+  author={Fabbri, Lorenzo and Andru{\v{s}}aityt{\.{e}}, Sandra and Basaga{\~n}a, Xavier and Bhopal, Sunil and Bustamante, Mariona and Cheung, Rachael W. and Gra{\v{z}}ulevi{\v{c}}ien{\.{e}}, Regina and Guxens, M{\`o}nica and Kadawathagedara, Manik and Kampouri, Mariza and others},
+  journal={Environment International},
+  volume={206},
+  pages={109927},
+  year={2025},
+  publisher={Elsevier BV}
+}
+```

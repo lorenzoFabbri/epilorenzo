@@ -1,0 +1,36 @@
+---
+title: "Prenatal Exposure to Chemical Mixtures and Metabolic Syndrome Risk in European Children"
+date: 2024-01-01
+author:
+  - name: Lorenzo Fabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: ISGlobal, Universitat Pompeu Fabra
+categories:
+  - Exposome
+  - Metabolic Health
+  - Environmental Epidemiology
+pub-info:
+  reference: >-
+    G&uuml;il Oumrait N, Stratakis N, Maitre L, Anguita Ruiz A, Urquiza J, <strong>Fabbri L</strong>, Basaga&ntilde;a X, Heude B, Sm&aring;stuen Haug L, Kaur Sakhi A, et al. "Prenatal Exposure to Chemical Mixtures and Metabolic Syndrome Risk in European Children." Presented at the ISEE Annual Conference 2024 (2024). doi: <a href="https://doi.org/10.1289/isee.2024.1562"><code>10.1289/isee.2024.1562</code></a>
+  links:
+    - name: Abstract
+      url: https://doi.org/10.1289/isee.2024.1562
+      icon: fa-solid fa-scroll
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1289/isee.2024.1562
+      icon: ai ai-zotero
+doi: 10.1289/isee.2024.1562
+---
+
+**Conference:** ISEE Annual Conference 2024
+
+## BibTeX citation
+
+```bibtex
+@inproceedings{guil2024prenatal,
+  title={Prenatal Exposure to Chemical Mixtures and Metabolic Syndrome Risk in European Children},
+  author={G{\"u}il Oumrait, Nuria and Stratakis, Nikos and Maitre, L{\'e}a and Anguita Ruiz, Augusto and Urquiza, Jose and Fabbri, Lorenzo and Basaga{\~n}a, Xavier and Heude, Barbara and Sm{\aa}stuen Haug, Line and Kaur Sakhi, Amrit and others},
+  booktitle={ISEE Annual Conference 2024},
+  year={2024}
+}
+```

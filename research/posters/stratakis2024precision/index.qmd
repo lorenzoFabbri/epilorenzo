@@ -1,0 +1,36 @@
+---
+title: "A precision environmental health approach to childhood obesity and metabolic dysfunction: identifying biological pathways and prenatal determinants"
+date: 2024-01-01
+author:
+  - name: Lorenzo Fabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: ISGlobal, Universitat Pompeu Fabra
+categories:
+  - Multi-omics
+  - Exposome
+  - Metabolic Health
+pub-info:
+  reference: >-
+    Stratakis N, Anguita Ruiz A, <strong>Fabbri L</strong>, Maitre L, Gonz&aacute;lez JR, Andrusaityte S, Basaga&ntilde;a X, Borr&agrave;s E, Keun HC, Chatzi L, et al. "A precision environmental health approach to childhood obesity and metabolic dysfunction: identifying biological pathways and prenatal determinants." Presented at the ISEE Annual Conference 2024 (2024). doi: <a href="https://doi.org/10.1289/isee.2024.0593"><code>10.1289/isee.2024.0593</code></a>
+  links:
+    - name: Abstract
+      url: https://doi.org/10.1289/isee.2024.0593
+      icon: fa-solid fa-scroll
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1289/isee.2024.0593
+      icon: ai ai-zotero
+doi: 10.1289/isee.2024.0593
+---
+
+**Conference:** ISEE Annual Conference 2024
+
+## BibTeX citation
+
+```bibtex
+@inproceedings{stratakis2024precision,
+  title={A precision environmental health approach to childhood obesity and metabolic dysfunction: identifying biological pathways and prenatal determinants},
+  author={Stratakis, Nikos and Anguita Ruiz, Augusto and Fabbri, Lorenzo and Maitre, L{\'e}a and Gonz{\'a}lez, Juan R and Andrusaityte, Sandra and Basaga{\~n}a, Xavier and Borr{\`a}s, Eva and Keun, Hector C and Chatzi, Lida and others},
+  booktitle={ISEE Annual Conference 2024},
+  year={2024}
+}
+```

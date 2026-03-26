@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:orcid.org)",
+      "WebFetch(domain:bsky.app)",
+      "WebFetch(domain:www.linkedin.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:pub.orcid.org)",
+      "WebFetch(domain:doi.org)",
+      "WebFetch(domain:www.nature.com)",
+      "WebFetch(domain:jamanetwork.com)",
+      "WebFetch(domain:dx.plos.org)",
+      "WebFetch(domain:www.sciencedirect.com)",
+      "WebFetch(domain:journals.plos.org)",
+      "WebFetch(domain:api.crossref.org)"
+    ]
+  }
+}

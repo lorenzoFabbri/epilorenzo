@@ -29,15 +29,18 @@ website:
       - icon: github
         href: https://github.com/lorenzoFabbri
         aria-label: GitHub
+      - text: "{{< ai orcid >}}"
+        href: https://orcid.org/0000-0003-3031-322X
+        aria-label: ORCID
+      - text: "{{< ai google-scholar >}}"
+        href: https://scholar.google.com/citations?user=QbPv1H0AAAAJ&hl=en&sortby=pubdate
+        aria-label: Google Scholar
       - icon: linkedin
         href: https://www.linkedin.com/in/lorenzo-fabbri-303185383/
         aria-label: LinkedIn
-      - icon: twitter
+      - text: "{{< fa brands bluesky >}}"
         href: https://bsky.app/profile/epilorenzo.bsky.social
         aria-label: Bluesky
-      - text: "{{< ai orcid >}}"
-        href: https://orcid.org/my-orcid?orcid=0000-0003-3031-322X
-        aria-label: ORCID
 
   # Footer configuration
   page-footer:
@@ -59,10 +62,10 @@ format:
   html:
     theme:
       - flatly
-      - custom.css
+      - assets/css/custom.css
     css:
-      - custom.css
-      - custom-books.css
+      - assets/css/custom.css
+      - assets/css/custom-books.css
     toc: true
     toc-depth: 3
     toc-location: right
@@ -79,7 +82,7 @@ format:
 
 # Citation and bibliography configuration
 #bibliography: references.bib
-#csl: apa.csl
+#csl: assets/apa.csl
 
 # Execution options
 execute:

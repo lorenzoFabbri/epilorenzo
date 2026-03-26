@@ -4,7 +4,7 @@ listing:
   - id: talks_2025
     contents: talks/talks_2025.yml
     sort: "date desc"
-    template: html/talks/listing.ejs
+    template: assets/templates/talks/listing.ejs
 page-layout: full
 toc: true
 toc-location: right

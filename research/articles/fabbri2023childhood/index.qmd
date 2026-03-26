@@ -1,0 +1,50 @@
+---
+title: "Childhood exposure to non-persistent endocrine disrupting chemicals and multi-omic profiles: A panel study"
+date: 2023-01-01
+author:
+  - name: Lorenzo Fabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: ISGlobal, Universitat Pompeu Fabra
+categories:
+  - Multi-omics
+  - Endocrine Disruptors
+  - Environmental Epidemiology
+  - Exposome
+pub-info:
+  reference: >-
+    <strong>Fabbri L</strong>, Garlant&eacute;zec R, Audouze K, Bustamante M, Carracedo Á, Chatzi L, Ram&oacute;n Gonz&aacute;lez J, Gra&#382;ulevi&#269;ien&#279; R, Keun H, Lau CE, et al. "Childhood exposure to non-persistent endocrine disrupting chemicals and multi-omic profiles: A panel study." <em>Environment International</em> 173 (2023): 107856, doi: <a href="https://doi.org/10.1016/j.envint.2023.107856"><code>10.1016/j.envint.2023.107856</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1016/j.envint.2023.107856
+      icon: fa-solid fa-scroll
+    - name: Code
+      url: https://github.com/lorenzoFabbri/paper-helix-multiOmics
+      icon: fa-brands fa-github
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1016/j.envint.2023.107856
+      icon: ai ai-zotero
+doi: 10.1016/j.envint.2023.107856
+---
+
+## Abstract
+
+Available at the [journal website](https://doi.org/10.1016/j.envint.2023.107856).
+
+## Important links
+
+- [Published version](https://doi.org/10.1016/j.envint.2023.107856)
+- [Code repository](https://github.com/lorenzoFabbri/paper-helix-multiOmics)
+
+## BibTeX citation
+
+```bibtex
+@article{fabbri2023childhood,
+  title={Childhood exposure to non-persistent endocrine disrupting chemicals and multi-omic profiles: A panel study},
+  author={Fabbri, Lorenzo and Garlant{\'e}zec, Ronan and Audouze, Karine and Bustamante, Mariona and Carracedo, {\'A}ngel and Chatzi, Leda and Ram{\'o}n Gonz{\'a}lez, Juan and Gra{\v{z}}ulevi{\v{c}}ien{\.{e}}, Regina and Keun, Hector and Lau, Chung-Ho E and others},
+  journal={Environment International},
+  volume={173},
+  pages={107856},
+  year={2023},
+  publisher={Elsevier BV}
+}
+```
