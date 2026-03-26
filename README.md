@@ -1,8 +1,8 @@
-# Lorenzo Fabbri - Academic Website
+# Lorenzo Fabbri - Personal Website
 
-My personal academic website built with Quarto and R. This site showcases my research, publications, teaching, and blog posts.
+My personal academic website built with Quarto and R. The site includes my research, publications, talks, CV, blog posts, and a "Now" page.
 
-🌐 **Live site:** [https://lorenzofabbri.github.io/epilorenzo](https://lorenzofabbri.github.io/epilorenzo)
+**Live site:** [https://lorenzofabbri.github.io/epilorenzo](https://lorenzofabbri.github.io/epilorenzo)
 
 ## Building Locally
 
@@ -26,70 +26,71 @@ My personal academic website built with Quarto and R. This site showcases my res
    ```
 
 4. Preview locally:
+
    ```bash
    quarto preview
    ```
 
-The website will be built in the `docs/` directory.
+The website is built into the `docs/` directory and served via GitHub Pages.
 
 ## Publication Management
 
-Publications are managed manually by adding `.qmd` files in the appropriate directories under `research/`:
+Publications are managed via `publications.yml` and auto-generated using a Python script. The script fetches metadata from CrossRef (primary) or DOI content negotiation / DataCite (fallback).
 
-- `research/articles/` - Published journal articles and conference papers
-- `research/working-papers/` - Preprints and works in progress
-- `research/posters/` - Conference posters and presentations
+### Directory structure
 
-### Adding a New Publication
+- `research/articles/` — Published journal articles and conference papers
+- `research/posters/` — Conference posters
+- `research/working-papers/` — Preprints and works in progress (managed manually)
 
-1. Create a new folder under the appropriate category:
+### Generating publication pages
 
-   ```bash
-   mkdir -p research/articles/my-paper-name
-   ```
+```bash
+# Install Python dependencies
+pip install -r scripts/requirements.txt
 
-2. Create an `index.qmd` file in the folder with the publication details:
+# Generate pages from publications.yml
+python scripts/generate_publications.py
 
-   ```yaml
-   ---
-   title: "Your Paper Title"
-   date: 2024-01-15
-   author:
-     - name: Your Name
-       orcid: 0000-0003-3031-322X
-       affiliation: Your University
-   categories:
-     - Category 1
-     - Category 2
-   pub-info:
-     reference: >-
-       <strong>Your Name</strong>, "Paper Title," <em>Journal Name</em>
-     links:
-       - name: PDF
-         url: paper.pdf
-         icon: fa-solid fa-file-pdf
-         local: true
-       - name: DOI
-         url: https://doi.org/10.xxxx/xxxxx
-         icon: fa-solid fa-scroll
-   ---
-   ## Abstract
+# Preview without writing files
+python scripts/generate_publications.py --dry-run
 
-   Your abstract here...
-   ```
+# Report ORCID publications not yet in publications.yml
+python scripts/generate_publications.py --discover
+```
 
-3. Add any supporting files (PDFs, images) to the same folder
+### Adding a publication
 
-4. Render the website:
-   ```bash
-   quarto render
-   ```
+Add an entry to `publications.yml` under `articles` or `posters`:
 
-The publication will automatically appear on the Research page in the appropriate section.
+```yaml
+articles:
+  - doi: 10.xxxx/xxxxx
+    slug: fabbri2024title          # optional, auto-generated if omitted
+    categories:
+      - Epidemiology
+    github: https://github.com/lorenzoFabbri/my-paper
+    extra_links:
+      - name: Preprint
+        url: https://...
+        icon: fa-solid fa-file-pdf
+```
+
+Then run the generation script:
+
+```bash
+python scripts/generate_publications.py
+```
+
+The page will be written to `research/articles/{slug}/index.qmd` and appear automatically on the Research page.
+
+## Talks
+
+Talks are listed in `talks/talks_2025.yml` and rendered via a custom EJS template. Add new entries directly to the YAML file; the page at `talks.qmd` reads from it automatically.
 
 ## Writing Blog Posts
 
-1. Create a new folder in `posts/`:
+1. Create a folder under `posts/`:
 
    ```bash
    mkdir -p posts/my-new-post
@@ -107,16 +108,15 @@ The publication will automatically appear on the Research page in the appropriat
    ---
    ```
 
-3. Write your content in markdown/Quarto
+3. Write content in markdown/Quarto and render:
 
-4. Render and deploy:
    ```bash
    quarto render
    ```
 
 ## Deployment
 
-The website automatically deploys to GitHub Pages when you push to `main`. Make sure:
+The website automatically deploys to GitHub Pages on push to `main` via GitHub Actions. Make sure:
 
 1. GitHub Pages is enabled in repository settings
 2. Source is set to "GitHub Actions"
@@ -124,19 +124,14 @@ The website automatically deploys to GitHub Pages when you push to `main`. Make 
 
 ## Hardcover Integration
 
-The "Now" page features a dynamic integration with [Hardcover](https://hardcover.app) that automatically displays your currently reading books.
+The "Now" page fetches currently-reading books from [Hardcover](https://hardcover.app) via the `scripts/hardcover.R` script.
 
-Quick setup:
+Setup:
 
 1. Get your API token from https://hardcover.app/account/api
 2. Copy `_hardcover_config_example.R` to `_hardcover_config.R`
 3. Add your credentials to the config file
-4. Install required packages: `httr` and `jsonlite`
 
 ## License
 
 Content © 2025 Lorenzo Fabbri. Code is MIT licensed.
-
-## Acknowledgments
-
-Inspired by the [academicpages](https://github.com/academicpages/academicpages.github.io) template and built with [Quarto](https://quarto.org/).

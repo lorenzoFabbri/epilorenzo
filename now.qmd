@@ -47,6 +47,8 @@ Preparing for my incoming postdoctoral fellowship at CNIO, focused on pancreatic
 - Master in Public Health (UNED).
 - Master in Economic Analysis (UOC).
 
+### Reading
+
 ```{r}
 #| echo: false
 #| output: asis
@@ -55,7 +57,6 @@ Preparing for my incoming postdoctoral fellowship at CNIO, focused on pancreatic
 
 # Display currently reading books
 if (exists("books") && !is.null(books) && nrow(books) > 0) {
-  cat("- **Currently Reading:**\n\n")
   knitr::asis_output(display_books_html(books))
 } else {
   "- Reading: [Book Title] by [Author]\n"

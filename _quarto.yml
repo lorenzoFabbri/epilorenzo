@@ -46,13 +46,6 @@ website:
   page-footer:
     left: |
       © 2025 Lorenzo Fabbri. Built with [Quarto](https://quarto.org/).
-    right:
-      - icon: github
-        href: https://github.com/lorenzoFabbri
-        aria-label: GitHub
-      - icon: linkedin
-        href: https://www.linkedin.com/in/lorenzo-fabbri-303185383/
-        aria-label: LinkedIn
 
   # Blog configuration for posts
   page-navigation: true

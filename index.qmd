@@ -5,11 +5,13 @@ page-layout: full
 
 # Lorenzo Fabbri
 
-**Postdoctoral Fellow** *(incoming)* at the *[Centro Nacional de Investigaciones Oncológicas (CNIO)](https://www.cnio.es/)*.
+Incoming **Postdoctoral Fellow** at the *[Centro Nacional de Investigaciones Oncológicas (CNIO)](https://www.cnio.es/)*.
 
 ## About Me
 
-I am an aspiring cancer epidemiologist with a focus on the environmental and social determinants of cancer. My work combines transparent causal inference methods with evidence triangulation strategies to strengthen causal conclusions in observational epidemiology. I completed my PhD in Biomedicine at Universitat Pompeu Fabra (2021–2025) within the Childhood and Environment research group at ISGlobal, under the supervision of Prof. Martine Vrijheid. I am originally from San Marino 🇸🇲 and currently based in Spain 🇪🇸.
+I am an aspiring cancer epidemiologist with a focus on the environmental and social determinants of cancer. My work combines transparent causal inference methods with evidence triangulation strategies to strengthen causal conclusions in observational epidemiology.
+I completed my PhD in Biomedicine at Universitat Pompeu Fabra (2021–2025) within the Childhood and Environment research group at ISGlobal, under the supervision of Prof. Martine Vrijheid.
+I am originally from San Marino 🇸🇲 and currently based in Spain 🇪🇸.
 
 ## Research Interests
 

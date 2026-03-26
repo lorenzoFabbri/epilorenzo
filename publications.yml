@@ -3,11 +3,11 @@
 # from CrossRef / DataCite for each DOI, then writes research/articles/*/index.qmd
 # and research/posters/*/index.qmd.
 #
-# Required per entry: doi OR (slug + manual section for DOI-less items)
+# Required per entry: DOI OR (slug + manual section for DOI-less items)
 # Optional per entry: slug (auto-derived), github, categories, extra_links, notes
 
 orcid: "0000-0003-3031-322X"
-contact_email: "lorenzocarmine.fabbri@gmail.com"  # used for CrossRef polite pool
+contact_email: "lorenzo.fabbri92sm@gmail.com"
 
 articles:
   - doi: "10.1371/journal.pcbi.1005280"
@@ -71,41 +71,41 @@ articles:
 posters:
   - doi: "10.6084/M9.FIGSHARE.17708726.V3"
     slug: "fabbri2017efficient"
-    year: 2017   # figshare DOI returns upload year (2021); override with actual conference year
+    year: 2017 # figshare DOI returns upload year (2021); override with actual conference year
     conference: "Platform for Advanced Scientific Computing (PASC) 2017"
     categories:
       - Computational Methods
       - Bayesian Statistics
-    authors:   # figshare record only lists the uploader; provide full author list manually
-      - {given: "Lorenzo", family: "Fabbri"}
-      - {given: "Avinash", family: "Ummadisingu"}
-      - {given: "Ritabrata", family: "Dutta"}
-      - {given: "Radim", family: "Janal\u00EDk"}
-      - {given: "Antonietta", family: "Mira"}
-      - {given: "Olaf", family: "Schenk"}
-      - {given: "Marcel", family: "Schoengens"}
+    authors: # figshare record only lists the uploader; provide full author list manually
+      - { given: "Lorenzo", family: "Fabbri" }
+      - { given: "Avinash", family: "Ummadisingu" }
+      - { given: "Ritabrata", family: "Dutta" }
+      - { given: "Radim", family: "Janal\u00EDk" }
+      - { given: "Antonietta", family: "Mira" }
+      - { given: "Olaf", family: "Schenk" }
+      - { given: "Marcel", family: "Schoengens" }
     extra_links:
       - name: "Poster"
         url: "https://doi.org/10.6084/M9.FIGSHARE.17708726.V3"
         icon: "fa-solid fa-file-image"
 
-  # No single primary DOI — two separate figshare uploads for the same poster
+  # No single primary DOI — two separate figshare uploads for the "same" poster
   - slug: "fabbri2022childhood"
     manual:
       title: "Childhood exposure to non-persistent endocrine disrupting chemicals and multi-omic markers in a population-based child cohort"
       year: 2022
       authors:
-        - {given: "Lorenzo", family: "Fabbri"}
-        - {given: "Ronan", family: "Garlantézec"}
-        - {given: "Cathrine", family: "Thomsen"}
-        - {given: "John", family: "Wright"}
-        - {given: "Rémy", family: "Slama"}
-        - {given: "Barbara", family: "Heude"}
-        - {given: "Regina", family: "Gražulevičienė"}
-        - {given: "Leda", family: "Chatzi"}
-        - {given: "Chung-Ho E", family: "Lau"}
-        - {given: "Alexandros P", family: "Siskos"}
-        - {given: "others", family: ""}
+        - { given: "Lorenzo", family: "Fabbri" }
+        - { given: "Ronan", family: "Garlantézec" }
+        - { given: "Cathrine", family: "Thomsen" }
+        - { given: "John", family: "Wright" }
+        - { given: "Rémy", family: "Slama" }
+        - { given: "Barbara", family: "Heude" }
+        - { given: "Regina", family: "Gražulevičienė" }
+        - { given: "Leda", family: "Chatzi" }
+        - { given: "Chung-Ho E", family: "Lau" }
+        - { given: "Alexandros P", family: "Siskos" }
+        - { given: "others", family: "" }
       conference: "EURION Annual Meeting and PPTOX-VII International Conference on Prenatal Programming and Toxicity Meeting (2022)"
     categories:
       - Multi-omics
