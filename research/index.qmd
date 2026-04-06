@@ -30,6 +30,7 @@ My research focuses on the environmental and social determinants of cancer, usin
 ## Research software
 
 - [`forrest`](https://github.com/lorenzoFabbri/forrest): R package to create publication-ready forest plots (epidemiology, meta-analysis). Available on [CRAN](https://cran.r-project.org/package=forrest).
+- [`causatr`](https://github.com/etverse/causatr): R package for causal effects estimation.
 - [`negatr`](https://github.com/etverse/negatr): R package for negative control analysis — detecting and correcting unmeasured confounding in epidemiological studies.
 - [`orcidtr`](https://github.com/lorenzoFabbri/orcidtr): R package to retrieve data from the ORCID public API. Available on [CRAN](https://cran.r-project.org/package=orcidtr).
 - [`manuscripts`](https://github.com/lorenzoFabbri/manuscripts): Template for writing scientific manuscripts using Markdown and Zotero.

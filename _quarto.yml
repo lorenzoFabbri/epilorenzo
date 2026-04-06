@@ -45,7 +45,7 @@ website:
   # Footer configuration
   page-footer:
     left: |
-      © 2025 Lorenzo Fabbri. Built with [Quarto](https://quarto.org/).
+      © 2026 Lorenzo Fabbri. Built with [Quarto](https://quarto.org/).
 
   # Blog configuration for posts
   page-navigation: true
