@@ -30,7 +30,7 @@ if (file.exists("_hardcover_config.R")) {
 
 # What I'm Doing Now
 
-*Last updated: March 2026*
+*Last updated: April 2026*
 
 This is a [now page](https://nownownow.com/about), inspired by Derek Sivers, describing what I'm currently focused on.
 
@@ -73,9 +73,11 @@ if (exists("books") && !is.null(books) && nrow(books) > 0) {
 
 ## Side Projects
 
-- [`forrest`](https://github.com/lorenzoFabbri/forrest): R package for publication-ready forest plots.
-- [`negatr`](https://github.com/etverse/negatr): R package for negative control analysis in epidemiology.
-- [`orcidtr`](https://github.com/lorenzoFabbri/orcidtr): R package to access the ORCID public API.
+- [`forrest`](https://github.com/lorenzoFabbri/forrest): publication-ready forest plots.
+- [`causatr`](https://github.com/etverse/causatr): causal effects estimation (part of [etverse](https://github.com/etverse)).
+- [`negatr`](https://github.com/etverse/negatr): negative control analysis (part of [etverse](https://github.com/etverse)).
+- [`orcidtr`](https://github.com/lorenzoFabbri/orcidtr): ORCID public API client.
+- [`manuscripts`](https://github.com/lorenzoFabbri/manuscripts): Markdown + Zotero manuscript template.
 
 ---
 
