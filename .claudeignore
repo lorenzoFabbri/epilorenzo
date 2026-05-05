@@ -1,0 +1,16 @@
+# Third-party Quarto extensions (fonts, CSS, Lua filters)
+_extensions/
+
+# Quarto freeze files (cached JS libs, execution results)
+_freeze/
+
+# renv lockfile and library
+renv.lock
+renv/
+
+# Python virtual environment
+scripts/.venv/
+
+# Auto-generated publication pages (rebuilt from publications.yml)
+research/articles/*/index.qmd
+research/posters/*/index.qmd

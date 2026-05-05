@@ -1,6 +1,7 @@
 # ── Quarto ────────────────────────────────────────────────────────────────────
 /.quarto/
-docs/           # rendered site output (deployed via GitHub Pages artifact)
+# Rendered site output (deployed via GitHub Pages artifact)
+docs/
 _site/
 *_cache/
 *_files/
@@ -30,6 +31,9 @@ scripts/.venv/
 _hardcover_config.R
 .env
 .env.local
+
+# ── Transient reports ─────────────────────────────────────────────────────────
+_new_publications.md
 
 # ── OS ────────────────────────────────────────────────────────────────────────
 .DS_Store

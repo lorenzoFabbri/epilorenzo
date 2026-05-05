@@ -35,7 +35,9 @@ The website is built into the `docs/` directory and served via GitHub Pages.
 
 ## Publication Management
 
-Publications are managed via `publications.yml` and auto-generated using a Python script. The script fetches metadata from CrossRef (primary) or DOI content negotiation / DataCite (fallback).
+Publications are managed via `publications.yml`. New journal articles are **automatically discovered** from ORCID weekly (via the [`orcidtr`](https://cran.r-project.org/package=orcidtr) R package), and publication pages are generated using a Python script that fetches metadata from CrossRef (primary) or DOI content negotiation / DataCite (fallback).
+
+When new papers are found, a GitHub Issue is opened listing them so you can add categories and links.
 
 ### Directory structure
 
@@ -43,23 +45,29 @@ Publications are managed via `publications.yml` and auto-generated using a Pytho
 - `research/posters/` — Conference posters
 - `research/working-papers/` — Preprints and works in progress (managed manually)
 
-### Generating publication pages
+### Automatic discovery (CI)
+
+Every Monday at 06:00 UTC, a GitHub Actions workflow:
+
+1. Queries ORCID for new `journal-article` works (via `scripts/discover_publications.R`)
+2. Appends any new DOIs to `publications.yml` with empty categories
+3. Generates/updates all publication pages (via `scripts/generate_publications.py`)
+4. Commits changes and opens a GitHub Issue if new papers were added
+
+### Manual usage
 
 ```bash
-# Install Python dependencies
-pip install -r scripts/requirements.txt
+# Discover new ORCID articles locally
+Rscript scripts/discover_publications.R
 
 # Generate pages from publications.yml
 python scripts/generate_publications.py
 
 # Preview without writing files
 python scripts/generate_publications.py --dry-run
-
-# Report ORCID publications not yet in publications.yml
-python scripts/generate_publications.py --discover
 ```
 
-### Adding a publication
+### Adding a publication manually
 
 Add an entry to `publications.yml` under `articles` or `posters`:
 
@@ -129,9 +137,13 @@ The "Now" page fetches currently-reading books from [Hardcover](https://hardcove
 Setup:
 
 1. Get your API token from https://hardcover.app/account/api
-2. Copy `_hardcover_config_example.R` to `_hardcover_config.R`
-3. Add your credentials to the config file
+2. Create `_hardcover_config.R` with your credentials (see `.gitignore` — this file is not tracked):
+
+   ```r
+   HARDCOVER_API_TOKEN <- "your-token-here"
+   HARDCOVER_USER_ID <- "your-user-id"
+   ```
 
 ## License
 
-Content © 2025 Lorenzo Fabbri. Code is MIT licensed.
+Content © 2026 Lorenzo Fabbri. Code is MIT licensed.
