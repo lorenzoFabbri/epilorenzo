@@ -1,12 +1,13 @@
 name: Build and Deploy Quarto Website
 
 # Deploy the Quarto website to GitHub Pages
-# Runs on push to main and can be triggered manually
+# Triggered automatically after Update Publication Pages completes, and can be triggered manually
 
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["Update Publication Pages"]
+    types:
+      - completed
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages

@@ -47,12 +47,13 @@ When new papers are found, a GitHub Issue is opened listing them so you can add 
 
 ### Automatic discovery (CI)
 
-Every Monday at 06:00 UTC, a GitHub Actions workflow:
+On the first Monday of every month at 08:00 UTC, a GitHub Actions workflow:
 
 1. Queries ORCID for new `journal-article` works (via `scripts/discover_publications.R`)
 2. Appends any new DOIs to `publications.yml` with empty categories
 3. Generates/updates all publication pages (via `scripts/generate_publications.py`)
 4. Commits changes and opens a GitHub Issue if new papers were added
+5. Triggers the website deployment workflow automatically once complete
 
 ### Manual usage
 
@@ -124,7 +125,7 @@ Talks are listed in `talks/talks_2025.yml` and rendered via a custom EJS templat
 
 ## Deployment
 
-The website automatically deploys to GitHub Pages on push to `main` via GitHub Actions. Make sure:
+The website automatically deploys to GitHub Pages after the Update Publication Pages workflow completes (i.e., once a month on the first Monday). It can also be triggered manually via `workflow_dispatch`. Make sure:
 
 1. GitHub Pages is enabled in repository settings
 2. Source is set to "GitHub Actions"

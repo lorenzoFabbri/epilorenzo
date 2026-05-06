@@ -1,13 +1,14 @@
 name: Update Publication Pages
 
-# Runs weekly and whenever publications.yml is changed.
+# Runs on the first Monday of every month and whenever publications.yml is changed.
 # Discovers new ORCID publications (via orcidtr), appends them to
 # publications.yml, regenerates all research pages, commits changes,
 # and opens a GitHub Issue if new papers were added.
+# On completion, the Build and Deploy Quarto Website workflow is triggered automatically.
 
 on:
   schedule:
-    - cron: "0 6 * * 1"   # Every Monday at 06:00 UTC
+    - cron: "0 8 1-7 * 1"   # First Monday of every month at 08:00 UTC
   push:
     paths:
       - "publications.yml"
