@@ -4,6 +4,8 @@ name: Build and Deploy Quarto Website
 # Triggered automatically after Update Publication Pages completes, and can be triggered manually
 
 on:
+  push:
+    branches: [main]
   workflow_run:
     workflows: ["Update Publication Pages"]
     types:
