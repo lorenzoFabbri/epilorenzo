@@ -5,7 +5,7 @@ page-layout: full
 
 # Lorenzo Fabbri
 
-Incoming **Postdoctoral Fellow** at the *[Centro Nacional de Investigaciones Oncológicas (CNIO)](https://www.cnio.es/)*.
+**Postdoctoral Fellow** at the *[Genetic and Molecular Epidemiology Group](https://www.cnio.es/investigacion-e-innovacion/programas-cientificos/programa-de-genomica-del-cancer/grupo-de-epidemiologia-genetica-y-molecular/)*, [Centro Nacional de Investigaciones Oncológicas (CNIO)](https://www.cnio.es/).
 
 ## About Me
 
@@ -31,8 +31,8 @@ I am originally from San Marino 🇸🇲 and currently based in Spain 🇪🇸.
 
 ::: {.news}
 
-**March 2026**
-Incoming postdoctoral fellow at CNIO.
+**June 2026**
+Starting a new position as Postdoctoral Fellow at the Genetic and Molecular Epidemiology Group, CNIO.
 
 :::
 
