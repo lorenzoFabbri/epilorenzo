@@ -12,10 +12,10 @@ page-layout: full
 # Load Hardcover API functions
 source("scripts/hardcover.R")
 
-# Load configuration (create _hardcover_config.R from _hardcover_config_example.R)
+# Load config (create _hardcover_config.R from the example file)
 if (file.exists("_hardcover_config.R")) {
   source("_hardcover_config.R")
-  
+
   # Fetch currently reading books
   tryCatch({
     books <- get_currently_reading(HARDCOVER_API_TOKEN, HARDCOVER_USER_ID)
@@ -38,12 +38,13 @@ This is a [now page](https://nownownow.com/about), inspired by Derek Sivers, des
 
 ### Research
 
-Starting a postdoctoral fellowship at the Genetic and Molecular Epidemiology Group, CNIO, focused on pancreatic and bladder cancer.
+Postdoctoral Fellow at the Genetic and Molecular Epidemiology Group, CNIO, working on pancreatic and bladder cancer.
 
 ### Learning
 
 - Postgraduate Certificate in Public Health (LSHTM).
 - Graduate Certificate in Theoretical Statistics and Probability (OU).
+- Diploma in Advanced Applied Statistics (UNED).
 - Master in Public Health (UNED).
 - Master in Economic Analysis (UOC).
 
@@ -65,19 +66,17 @@ if (exists("books") && !is.null(books) && nrow(books) > 0) {
 
 ## Recent Accomplishments
 
-- Completed my PhD in Biomedicine at Universitat Pompeu Fabra (December 2025).
-
-## Upcoming
-
-- Starting postdoctoral fellowship at the Genetic and Molecular Epidemiology Group, CNIO.
+- Completed my PhD in Biomedicine at Universitat Pompeu Fabra — submitted September 2025, defended December 2025.
+- Held a postdoctoral fellowship on the cancer genomics of vulvar and penile squamous cell carcinoma (Rakislova Lab, ISGlobal).
 
 ## Side Projects
 
 - [`forrest`](https://github.com/lorenzoFabbri/forrest): publication-ready forest plots.
 - [`causatr`](https://github.com/etverse/causatr): causal effects estimation (part of [etverse](https://github.com/etverse)).
 - [`negatr`](https://github.com/etverse/negatr): negative control analysis (part of [etverse](https://github.com/etverse)).
+- [`matchatr`](https://github.com/etverse/matchatr): (matched) case-control and case-cohort study analysis (part of [etverse](https://github.com/etverse)).
+- [`survatr`](https://github.com/etverse/survatr): survival analysis (part of [etverse](https://github.com/etverse)).
 - [`orcidtr`](https://github.com/lorenzoFabbri/orcidtr): ORCID public API client.
-- [`manuscripts`](https://github.com/lorenzoFabbri/manuscripts): Markdown + Zotero manuscript template.
 
 ---
 

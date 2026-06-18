@@ -27,9 +27,9 @@ My research focuses on the environmental and social determinants of cancer, usin
 :::{#posters}
 :::
 
-## Under review
+## Working papers
 
-- **Distinct tumor microenvironment signatures predict outcomes and correlate with PD-L1 in HPV-independent vulvar cancer.**
+- **Clonal evolution and genomic divergence in penile squamous cell carcinoma: insights from matched premalignant, normal, and tumor tissues.**
 - **Cohort Profile Update: The Human Early Life Exposome (HELIX) Cohort.**
 
 ## Research software
@@ -38,12 +38,13 @@ My research focuses on the environmental and social determinants of cancer, usin
 
 - [`causatr`](https://github.com/etverse/causatr): causal effects estimation.
 - [`negatr`](https://github.com/etverse/negatr): negative control analysis — detecting and correcting unmeasured confounding.
+- [`matchatr`](https://github.com/etverse/matchatr): analysis of (matched) case-control and case-cohort studies.
+- [`survatr`](https://github.com/etverse/survatr): analysis of survival (time-to-event) data.
 
 **Standalone packages**
 
 - [`forrest`](https://github.com/lorenzoFabbri/forrest): publication-ready forest plots (epidemiology, meta-analysis). On [CRAN](https://cran.r-project.org/package=forrest).
 - [`orcidtr`](https://github.com/lorenzoFabbri/orcidtr): retrieve data from the ORCID public API. On [CRAN](https://cran.r-project.org/package=orcidtr).
-- [`manuscripts`](https://github.com/lorenzoFabbri/manuscripts): template for scientific manuscripts using Markdown and Zotero.
 
 ---
 
