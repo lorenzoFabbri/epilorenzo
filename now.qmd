@@ -30,7 +30,16 @@ if (file.exists("_hardcover_config.R")) {
 
 # What I'm Doing Now
 
-*Last updated: June 2026*
+```{r}
+#| echo: false
+#| output: asis
+#| warning: false
+#| message: false
+
+source("scripts/last_updated.R")
+
+cat(sprintf("*Last updated: %s*\n", last_updated("now.qmd")))
+```
 
 This is a [now page](https://nownownow.com/about), inspired by Derek Sivers, describing what I'm currently focused on.
 
@@ -71,12 +80,23 @@ if (exists("books") && !is.null(books) && nrow(books) > 0) {
 
 ## Side Projects
 
+**[etverse](https://etverse.github.io/)** — an R ecosystem for transparent causal inference.
+
+- [`causatr`](https://github.com/etverse/causatr): causal effects estimation.
+- [`negatr`](https://github.com/etverse/negatr): negative control analysis.
+- [`matchatr`](https://github.com/etverse/matchatr): (matched) case-control and case-cohort study analysis.
+- [`survatr`](https://github.com/etverse/survatr): survival analysis.
+
+**Standalone R packages**
+
 - [`forrest`](https://github.com/lorenzoFabbri/forrest): publication-ready forest plots.
-- [`causatr`](https://github.com/etverse/causatr): causal effects estimation (part of [etverse](https://github.com/etverse)).
-- [`negatr`](https://github.com/etverse/negatr): negative control analysis (part of [etverse](https://github.com/etverse)).
-- [`matchatr`](https://github.com/etverse/matchatr): (matched) case-control and case-cohort study analysis (part of [etverse](https://github.com/etverse)).
-- [`survatr`](https://github.com/etverse/survatr): survival analysis (part of [etverse](https://github.com/etverse)).
 - [`orcidtr`](https://github.com/lorenzoFabbri/orcidtr): ORCID public API client.
+
+**Writing and tooling**
+
+- [`bibaudit`](https://lorenzofabbri.github.io/bibaudit/): field-level verification of bibliographies against Crossref, DataCite, PubMed and Open Library.
+- [`paper-template`](https://github.com/lorenzoFabbri/paper-template): a paper written in Markdown, built into a submission-ready DOCX, a Typst PDF and a journal bundle.
+- [`manuscript-engine`](https://github.com/lorenzoFabbri/manuscript-engine): the Pandoc filters and build machinery behind `paper-template`, pinned into each paper as a submodule.
 
 ---
 

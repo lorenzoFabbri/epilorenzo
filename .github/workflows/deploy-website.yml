@@ -30,6 +30,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+        with:
+          # Full history: the Now page dates itself from each file's last commit.
+          fetch-depth: 0
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2

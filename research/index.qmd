@@ -34,17 +34,23 @@ My research focuses on the environmental and social determinants of cancer, usin
 
 ## Research software
 
-**[etverse](https://github.com/etverse)** — modular R ecosystem for transparent causal inference. In development.
+**[etverse](https://etverse.github.io/)** — modular R ecosystem for transparent causal inference. In development.
 
 - [`causatr`](https://github.com/etverse/causatr): causal effects estimation.
 - [`negatr`](https://github.com/etverse/negatr): negative control analysis — detecting and correcting unmeasured confounding.
 - [`matchatr`](https://github.com/etverse/matchatr): analysis of (matched) case-control and case-cohort studies.
 - [`survatr`](https://github.com/etverse/survatr): analysis of survival (time-to-event) data.
 
-**Standalone packages**
+**Standalone R packages**
 
 - [`forrest`](https://github.com/lorenzoFabbri/forrest): publication-ready forest plots (epidemiology, meta-analysis). On [CRAN](https://cran.r-project.org/package=forrest).
 - [`orcidtr`](https://github.com/lorenzoFabbri/orcidtr): retrieve data from the ORCID public API. On [CRAN](https://cran.r-project.org/package=orcidtr).
+
+**Writing and tooling**
+
+- [`bibaudit`](https://lorenzofabbri.github.io/bibaudit/): deterministic, field-level verification of a bibliography against Crossref, DataCite, PubMed and Open Library — every reference exists, every stored field matches the publisher's record, and anything retracted or under an expression of concern is flagged. No language model in the verdict path.
+- [`paper-template`](https://github.com/lorenzoFabbri/paper-template): write a paper in Markdown, build a submission-ready DOCX, a Typst PDF and a journal bundle.
+- [`manuscript-engine`](https://github.com/lorenzoFabbri/manuscript-engine): the Pandoc filters, Typst templates and journal packaging behind `paper-template`, pinned into each paper as a submodule.
 
 ---
 
