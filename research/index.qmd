@@ -48,7 +48,7 @@ My research focuses on the environmental and social determinants of cancer, usin
 
 **Writing and tooling**
 
-- [`bibaudit`](https://lorenzofabbri.github.io/bibaudit/): deterministic, field-level verification of a bibliography against Crossref, DataCite, PubMed and Open Library — every reference exists, every stored field matches the publisher's record, and anything retracted or under an expression of concern is flagged. No language model in the verdict path.
+- [`bibaudit`](https://lorenzofabbri.github.io/bibaudit/): deterministic, field-level verification of a bibliography against Crossref, DataCite, PubMed and Open Library — every reference exists, every stored field matches the publisher's record, and anything retracted or under an expression of concern is flagged. No language model in the verdict path. On [PyPI](https://pypi.org/project/bibaudit/).
 - [`paper-template`](https://github.com/lorenzoFabbri/paper-template): write a paper in Markdown, build a submission-ready DOCX, a Typst PDF and a journal bundle.
 - [`manuscript-engine`](https://github.com/lorenzoFabbri/manuscript-engine): the Pandoc filters, Typst templates and journal packaging behind `paper-template`, pinned into each paper as a submodule.
 
