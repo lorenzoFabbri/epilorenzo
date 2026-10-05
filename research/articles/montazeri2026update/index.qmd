@@ -1,0 +1,56 @@
+---
+title: "Update of the human early life exposome (HELIX) cohort: a European population-based exposome cohort—cohort profile"
+date: 2026-01-01
+author:
+  - name: Lorenzo Fabbri
+    orcid: 0000-0003-3031-322X
+    affiliation: ISGlobal, Universitat Pompeu Fabra
+categories:
+  - Research
+pub-info:
+  reference: >-
+    Montazeri P, Maitre L, Andru&#353;aityt&#279; S, Bjerve G&uuml;tzkow K, Coufal&iacute;kov&aacute; K, Davidson R, <strong>Fabbri L</strong>, Grazuleviciene R, Guxens M, Heude B, et al. "Update of the human early life exposome (HELIX) cohort: a European population-based exposome cohort—cohort profile." <em>BMJ Open</em> 16 (2026): e122608, doi: <a href="https://doi.org/10.1136/bmjopen-2026-122608"><code>10.1136/bmjopen-2026-122608</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1136/bmjopen-2026-122608
+      icon: fa-solid fa-scroll
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1136/bmjopen-2026-122608
+      icon: ai ai-zotero
+doi: 10.1136/bmjopen-2026-122608
+---
+
+## Abstract
+
+Purpose
+                    The Human Early Life Exposome (HELIX) cohort was established to assess a wide range of environmental exposures (the exposome) during early life and study the effects of the early life exposome on child and adolescent health outcomes and molecular omics signatures. Here, we describe the second follow-up of the HELIX cohort during adolescence, including measurements available and population characteristics.
+                  
+                  
+                    Participants
+                    HELIX is a collaborative study across six established and ongoing population-based birth cohort studies in six European countries (France, Greece, Lithuania, Norway, Spain and the United Kingdom). The cohort includes 1663 mother-child pairs recruited during pregnancy from 2003 to 2009 and followed up during childhood at 6–12 years from 2013 to 2016. This update summarises the most recent follow-up during adolescence (12–18 years) which took place from 2020 to 2022 and included 864 participants.
+                  
+                  
+                    Findings to date
+                    HELIX data have been used extensively in more than 100 publications, specifically pioneering the implementation of exposome approaches to address questions around the occurrence and effects of multiple exposures to real-life pollutant mixtures. These findings have improved our understanding of how multiple exposures co-exist and which exposures are driving the early-life exposome. Further, HELIX data have been used in exposome-wide discovery analyses to examine child health outcomes and used high-throughput omics techniques to characterise the internal exposome.
+                  
+                  
+                    Future plans
+                    Although no additional follow-up visits are currently planned, HELIX will remain an active exposome research resource for years to come. The cohort will leverage its comprehensive database and extensive biobank to investigate complex exposure-omics-health relationships and measure additional biological markers.
+
+## Important links
+
+- [Published version](https://doi.org/10.1136/bmjopen-2026-122608)
+
+## BibTeX citation
+
+```bibtex
+@article{montazeri2026update,
+  title={Update of the human early life exposome (HELIX) cohort: a European population-based exposome cohort—cohort profile},
+  author={Montazeri, Parisa and Maitre, L{\'e}a and Andru{\v{s}}aityt{\.{e}}, Sandra and Bjerve G{\"u}tzkow, Kristine and Coufal{\'i}kov{\'a}, Kate{\v{r}}ina and Davidson, Roberta and Fabbri, Lorenzo and Grazuleviciene, Regina and Guxens, M{\`o}nica and Heude, Barbara and others},
+  journal={BMJ Open},
+  volume={16},
+  pages={e122608},
+  year={2026},
+  publisher={BMJ}
+}
+```
