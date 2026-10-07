@@ -6,7 +6,9 @@ author:
     orcid: 0000-0003-3031-322X
     affiliation: ISGlobal, Universitat Pompeu Fabra
 categories:
-  - Research
+  - Exposome
+  - Environmental Epidemiology
+  - Child Health
 pub-info:
   reference: >-
     Montazeri P, Maitre L, Andru&#353;aityt&#279; S, Bjerve G&uuml;tzkow K, Coufal&iacute;kov&aacute; K, Davidson R, <strong>Fabbri L</strong>, Grazuleviciene R, Guxens M, Heude B, et al. "Update of the human early life exposome (HELIX) cohort: a European population-based exposome cohort—cohort profile." <em>BMJ Open</em> 16 (2026): e122608, doi: <a href="https://doi.org/10.1136/bmjopen-2026-122608"><code>10.1136/bmjopen-2026-122608</code></a>

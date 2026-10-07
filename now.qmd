@@ -53,9 +53,7 @@ Postdoctoral Fellow at the Genetic and Molecular Epidemiology Group, CNIO, worki
 
 - Máster de Formación Permanente en Salud Pública (UNED / ENS-ISCIII).
 - PG Certificate in Public Health (LSHTM).
-- Practical Epidemiology (EPM103), Statistical Methods in Epidemiology (EPM202) and Advanced Statistical Methods in Epidemiology (EPM304), taken standalone at LSHTM.
 - Graduate Certificate in Theoretical Statistics and Probability (OU).
-- Máster en Economía de la Salud y del Medicamento (UPF-BSM).
 - Máster universitario de Análisis Económico (UOC).
 - Máster en Análisis de las Desigualdades Sociales (UNED).
 
@@ -77,7 +75,7 @@ if (exists("books") && !is.null(books) && nrow(books) > 0) {
 
 ## Recent Accomplishments
 
-- Finished the Diploma de Experto Universitario en Métodos Avanzados de Estadística Aplicada (UNED), awaiting final results.
+- Completed the Diploma de Experto Universitario en Métodos Avanzados de Estadística Aplicada (UNED), September 2026.
 - Held a postdoctoral fellowship on the cancer genomics of vulvar and penile squamous cell carcinoma (Rakislova Lab, ISGlobal).
 - Completed my PhD in Biomedicine at Universitat Pompeu Fabra — submitted September 2025, defended December 2025.
 
@@ -97,7 +95,7 @@ if (exists("books") && !is.null(books) && nrow(books) > 0) {
 
 **Writing and tooling**
 
-- [`bibaudit`](https://lorenzofabbri.github.io/bibaudit/): field-level verification of bibliographies against Crossref, DataCite, PubMed and Open Library.
+- [`bibaudit`](https://lorenzofabbri.github.io/bibaudit/): field-level verification of bibliographies against Crossref, DataCite and PubMed.
 - [`paper-template`](https://github.com/lorenzoFabbri/paper-template): a paper written in Markdown, built into a submission-ready DOCX, a Typst PDF and a journal bundle.
 - [`manuscript-engine`](https://github.com/lorenzoFabbri/manuscript-engine): the Pandoc filters and build machinery behind `paper-template`, pinned into each paper as a submodule.
 

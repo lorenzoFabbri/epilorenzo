@@ -125,7 +125,7 @@ Talks are listed in `talks/talks_2025.yml` and rendered via a custom EJS templat
 
 ## Deployment
 
-The website automatically deploys to GitHub Pages after the Update Publication Pages workflow completes (i.e., once a month on the first Monday). It can also be triggered manually via `workflow_dispatch`. Make sure:
+The website deploys to GitHub Pages on every push to `main` and after the Update Publication Pages workflow completes (once a month on the first Monday, and on pushes that touch `publications.yml`). It can also be triggered manually via `workflow_dispatch`. Make sure:
 
 1. GitHub Pages is enabled in repository settings
 2. Source is set to "GitHub Actions"

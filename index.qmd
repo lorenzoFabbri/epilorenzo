@@ -9,11 +9,11 @@ page-layout: full
 
 ## About Me
 
-I am a cancer epidemiologist focused on the environmental and social determinants of cancer. As a Postdoctoral Fellow in the Genetic and Molecular Epidemiology Group at the Spanish National Cancer Research Centre (CNIO) in Madrid, I work on pancreatic and bladder cancer. Before joining CNIO, I held a postdoctoral fellowship in the Rakislova Lab at ISGlobal, working on the cancer genomics of vulvar and penile squamous cell carcinoma.
+I am a cancer epidemiologist focused on the environmental and social determinants of cancer. As a Postdoctoral Fellow in the Genetic and Molecular Epidemiology Group at the Spanish National Cancer Research Centre (CNIO) in Madrid, I work on pancreatic and bladder cancer and hold a Juan de la Cierva fellowship (2026–2029). Before joining CNIO, I held a postdoctoral fellowship in the Rakislova Lab at ISGlobal, working on the cancer genomics of vulvar and penile squamous cell carcinoma.
 
-My research combines transparent causal-inference methods with evidence-triangulation strategies to strengthen causal conclusions from observational data. I completed my PhD in Biomedicine at Universitat Pompeu Fabra (2021–2025) within the Childhood and Environment group at ISGlobal, under the supervision of Prof. Martine Vrijheid, working on early-life environmental exposures and neurodevelopment in the HELIX and ATHLETE cohorts.
+My research combines transparent causal-inference methods with evidence-triangulation strategies to strengthen causal conclusions from observational data. I completed my PhD in Biomedicine at Universitat Pompeu Fabra (2021–2025) within the Childhood and Environment group at ISGlobal, under the supervision of Prof. Martine Vrijheid and Dr. Léa Maitre, working on early-life environmental exposures and neurodevelopment in the HELIX and ATHLETE cohorts.
 
-Alongside my research, I am pursuing further graduate training in public health (LSHTM and UNED), epidemiological methods (LSHTM), theoretical statistics and probability (OU), health economics (UPF-BSM), economic analysis (UOC), and the social determinants of health (UNED). I also build open-source tools for reproducible research: I lead the [etverse](https://etverse.github.io/) ecosystem for transparent causal inference, maintain the CRAN packages [forrest](https://cran.r-project.org/package=forrest) and [orcidtr](https://cran.r-project.org/package=orcidtr) and the PyPI package [bibaudit](https://lorenzofabbri.github.io/bibaudit/), which verifies a bibliography field by field against publisher records, and write [paper-template](https://github.com/lorenzoFabbri/paper-template), for writing papers in Markdown. Originally from San Marino 🇸🇲 and currently based in Spain 🇪🇸.
+Alongside my research, I am pursuing further graduate training in public health (LSHTM and UNED), social inequalities (UNED), theoretical statistics (the Open University), and economics (UOC). I also build open-source tools for reproducible research: I lead the [etverse](https://etverse.github.io/) ecosystem for transparent causal inference, maintain the CRAN packages [forrest](https://cran.r-project.org/package=forrest) and [orcidtr](https://cran.r-project.org/package=orcidtr) and the PyPI package [bibaudit](https://lorenzofabbri.github.io/bibaudit/), which verifies a bibliography field by field against Crossref, DataCite and PubMed, and write [paper-template](https://github.com/lorenzoFabbri/paper-template), for writing papers in Markdown. Originally from San Marino 🇸🇲 and currently based in Spain 🇪🇸.
 
 ## Research Interests
 
@@ -22,6 +22,8 @@ Alongside my research, I am pursuing further graduate training in public health 
 - Evidence triangulation.
 
 ## Education
+
+- **University Expert Diploma in Advanced Methods of Applied Statistics** (*Universidad Nacional de Educación a Distancia, Spain*).
 
 - **PhD in Biomedicine** (*Universitat Pompeu Fabra, Spain*).
 
@@ -32,6 +34,12 @@ Alongside my research, I am pursuing further graduate training in public health 
 ## News & Updates
 
 ::: {.news}
+
+**November 2026**
+Starting a Juan de la Cierva fellowship at CNIO (2026–2029).
+
+**September 2026**
+Completed the University Expert Diploma in Advanced Methods of Applied Statistics (UNED).
 
 **June 2026**
 Starting a new position as Postdoctoral Fellow at the Genetic and Molecular Epidemiology Group, CNIO.
