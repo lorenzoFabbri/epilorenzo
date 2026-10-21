@@ -4,11 +4,15 @@ name: Update Publication Pages
 # Discovers new ORCID publications (via orcidtr), appends them to
 # publications.yml, regenerates all research pages, commits changes,
 # and opens a GitHub Issue if new papers were added.
-# On completion, the Build and Deploy Quarto Website workflow is triggered automatically.
+# Its last step dispatches the Build and Deploy Quarto Website workflow, which
+# also refreshes the Now page's reading list each month.
 
 on:
   schedule:
-    - cron: "0 8 1-7 * 1"   # First Monday of every month at 08:00 UTC
+    # Every Monday at 08:00 UTC; the gate job below keeps only the first of the
+    # month. Cron ORs day-of-month with day-of-week, so "1-7 * 1" would fire on
+    # days 1-7 *and* every Monday.
+    - cron: "0 8 * * 1"
   push:
     paths:
       - "publications.yml"
@@ -19,10 +23,26 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(date -u +%-d)" -le 7 ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
   update:
     runs-on: ubuntu-latest
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     env:
       RENV_CONFIG_AUTOLOADER_ENABLED: "false"
 
@@ -91,5 +111,13 @@ jobs:
 
           Edit \`publications.yml\` to add \`categories\`, \`github\`, and \`extra_links\` for each entry." \
             --label "publications"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # A push made with GITHUB_TOKEN starts no workflow, but a dispatch does,
+      # so the deploy is started here rather than by a workflow_run trigger,
+      # which would also fire on the Mondays the gate skips.
+      - name: Deploy the website
+        run: gh workflow run deploy-website.yml --ref main
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

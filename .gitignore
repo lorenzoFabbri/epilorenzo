@@ -7,6 +7,9 @@ _site/
 *_files/
 **/*.quarto_ipynb
 
+# ── Claude Code: personal permissions stay local ──────────────────────────────
+.claude/settings.local.json
+
 # ── R / renv ──────────────────────────────────────────────────────────────────
 .Rproj.user
 .Rhistory

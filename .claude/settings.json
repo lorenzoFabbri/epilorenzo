@@ -1,7 +1,19 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:lorenzofabbri.github.io)"
+      "WebFetch(domain:lorenzofabbri.github.io)",
+      "Bash(make render)",
+      "Bash(make preview)",
+      "Bash(quarto render)"
+    ],
+    "deny": [
+      "Read(./_extensions/**)",
+      "Read(./_freeze/**)",
+      "Read(./renv.lock)",
+      "Read(./renv/**)",
+      "Read(./scripts/.venv/**)",
+      "Read(./research/articles/*/index.qmd)",
+      "Read(./research/posters/*/index.qmd)"
     ]
   }
 }

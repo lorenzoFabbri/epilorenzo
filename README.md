@@ -35,7 +35,7 @@ The website is built into the `docs/` directory and served via GitHub Pages.
 
 ## Publication Management
 
-Publications are managed via `publications.yml`. New journal articles are **automatically discovered** from ORCID weekly (via the [`orcidtr`](https://cran.r-project.org/package=orcidtr) R package), and publication pages are generated using a Python script that fetches metadata from CrossRef (primary) or DOI content negotiation / DataCite (fallback).
+Publications are managed via `publications.yml`. New journal articles are **automatically discovered** from ORCID on the first Monday of each month (via the [`orcidtr`](https://cran.r-project.org/package=orcidtr) R package), and publication pages are generated using a Python script that fetches metadata from CrossRef (primary) or DOI content negotiation / DataCite (fallback).
 
 When new papers are found, a GitHub Issue is opened listing them so you can add categories and links.
 
@@ -43,7 +43,8 @@ When new papers are found, a GitHub Issue is opened listing them so you can add 
 
 - `research/articles/` — Published journal articles and conference papers
 - `research/posters/` — Conference posters
-- `research/working-papers/` — Preprints and works in progress (managed manually)
+
+Working papers are listed by hand in `research/index.qmd`.
 
 ### Automatic discovery (CI)
 
@@ -53,7 +54,9 @@ On the first Monday of every month at 08:00 UTC, a GitHub Actions workflow:
 2. Appends any new DOIs to `publications.yml` with empty categories
 3. Generates/updates all publication pages (via `scripts/generate_publications.py`)
 4. Commits changes and opens a GitHub Issue if new papers were added
-5. Triggers the website deployment workflow automatically once complete
+5. Dispatches the website deployment workflow, which also refreshes the Now page's reading list
+
+The schedule fires every Monday and a gate job skips all but the first of the month, because cron cannot express "first Monday".
 
 ### Manual usage
 
@@ -125,7 +128,7 @@ Talks are listed in `talks/talks_2025.yml` and rendered via a custom EJS templat
 
 ## Deployment
 
-The website deploys to GitHub Pages on every push to `main` and after the Update Publication Pages workflow completes (once a month on the first Monday, and on pushes that touch `publications.yml`). It can also be triggered manually via `workflow_dispatch`. Make sure:
+The website deploys to GitHub Pages on every push to `main` and whenever the Update Publication Pages workflow runs (once a month on the first Monday, and on pushes that touch `publications.yml`), which dispatches the deploy as its last step. It can also be triggered manually via `workflow_dispatch`. Make sure:
 
 1. GitHub Pages is enabled in repository settings
 2. Source is set to "GitHub Actions"

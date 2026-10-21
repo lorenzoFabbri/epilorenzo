@@ -47,15 +47,16 @@ This is a [now page](https://nownownow.com/about), inspired by Derek Sivers, des
 
 ### Research
 
-Postdoctoral Fellow at the Genetic and Molecular Epidemiology Group, CNIO, working on pancreatic and bladder cancer.
+Postdoctoral Fellow at the Genetic and Molecular Epidemiology Group, CNIO, working on what medicines do to the risk of pancreatic and bladder cancer, by emulating target trials on routine health records.
 
 ### Learning
 
 - Máster de Formación Permanente en Salud Pública (UNED / ENS-ISCIII).
-- PG Certificate in Public Health (LSHTM).
-- Graduate Certificate in Theoretical Statistics and Probability (OU).
-- Máster universitario de Análisis Económico (UOC).
+- Metodología de la investigación sanitaria, modules ME1 and ME2 (UAB).
 - Máster en Análisis de las Desigualdades Sociales (UNED).
+- Máster universitario de Análisis Económico (UOC).
+- Spanish B1 (UNED CUID).
+- Resuming in 2027/28: PG Certificate in Public Health (LSHTM) and Graduate Certificate in Theoretical Statistics and Probability (OU).
 
 ### Reading
 

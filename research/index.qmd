@@ -15,7 +15,7 @@ page-layout: full
 toc-location: right
 ---
 
-My research focuses on the environmental and social determinants of cancer, using causal inference and evidence triangulation to strengthen causal conclusions from observational data.
+My research asks what medicines do to the risk of cancer, estimated by emulating target trials on routine health records, mainly in pancreatic and bladder cancer, with each result reported across social groups. The publications below come from my PhD on environmental exposures and child health and from earlier work in computational biology.
 
 ## Journal articles
 

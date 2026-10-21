@@ -9,17 +9,19 @@ page-layout: full
 
 ## About Me
 
-I am a cancer epidemiologist focused on the environmental and social determinants of cancer. As a Postdoctoral Fellow in the Genetic and Molecular Epidemiology Group at the Spanish National Cancer Research Centre (CNIO) in Madrid, I work on pancreatic and bladder cancer and hold a Juan de la Cierva fellowship (2026–2029). Before joining CNIO, I held a postdoctoral fellowship in the Rakislova Lab at ISGlobal, working on the cancer genomics of vulvar and penile squamous cell carcinoma.
+I am a cancer epidemiologist at the Spanish National Cancer Research Centre (CNIO) in Madrid, where I am a postdoctoral fellow in the Genetic and Molecular Epidemiology Group and hold a Juan de la Cierva fellowship (2026–2029). My research asks what medicines do to the risk of cancer. I estimate the effect of starting one drug rather than another by emulating target trials on routine health records, mainly in pancreatic and bladder cancer, and report each result across social groups where the data allow.
 
-My research combines transparent causal-inference methods with evidence-triangulation strategies to strengthen causal conclusions from observational data. I completed my PhD in Biomedicine at Universitat Pompeu Fabra (2021–2025) within the Childhood and Environment group at ISGlobal, under the supervision of Prof. Martine Vrijheid and Dr. Léa Maitre, working on early-life environmental exposures and neurodevelopment in the HELIX and ATHLETE cohorts.
+My training is in environmental epidemiology and causal inference. For my PhD in Biomedicine at Universitat Pompeu Fabra (2021–2025), in the Childhood and Environment group at ISGlobal under Prof. Martine Vrijheid and Dr. Léa Maitre, I studied early-life exposure to environmental chemicals and child neurodevelopment in the HELIX and ATHLETE cohorts, using the parametric g-formula, evidence triangulation and multi-omic data. Between the PhD and CNIO I was a postdoctoral researcher in the Rakislova Lab at ISGlobal, working on the cancer genomics of vulvar and penile squamous cell carcinoma.
 
-Alongside my research, I am pursuing further graduate training in public health (LSHTM and UNED), social inequalities (UNED), theoretical statistics (the Open University), and economics (UOC). I also build open-source tools for reproducible research: I lead the [etverse](https://etverse.github.io/) ecosystem for transparent causal inference, maintain the CRAN packages [forrest](https://cran.r-project.org/package=forrest) and [orcidtr](https://cran.r-project.org/package=orcidtr) and the PyPI package [bibaudit](https://lorenzofabbri.github.io/bibaudit/), which verifies a bibliography field by field against Crossref, DataCite and PubMed, and write [paper-template](https://github.com/lorenzoFabbri/paper-template), for writing papers in Markdown. Originally from San Marino 🇸🇲 and currently based in Spain 🇪🇸.
+I am also studying for further degrees in public health (UNED and LSHTM), social inequalities (UNED), theoretical statistics (the Open University) and economics (UOC). I write open-source software for causal inference and reproducible research: I lead [etverse](https://etverse.github.io/), an R ecosystem for transparent causal inference, maintain [forrest](https://cran.r-project.org/package=forrest) and [orcidtr](https://cran.r-project.org/package=orcidtr) on CRAN, and wrote [bibaudit](https://pypi.org/project/bibaudit/), a Python package that checks a bibliography field by field against Crossref, DataCite and PubMed.
+
+Originally from San Marino 🇸🇲, currently based in Spain 🇪🇸.
 
 ## Research Interests
 
-- Cancer epidemiology: environmental and social determinants.
-- Causal inference in observational studies.
-- Evidence triangulation.
+- Causal pharmacoepidemiology of cancer, mainly pancreatic and bladder cancer.
+- Target-trial emulation on routine health records.
+- Health equity: each result reported across social groups.
 
 ## Education
 
@@ -35,7 +37,7 @@ Alongside my research, I am pursuing further graduate training in public health 
 
 ::: {.news}
 
-**November 2026**
+**December 2026**
 Starting a Juan de la Cierva fellowship at CNIO (2026–2029).
 
 **September 2026**
